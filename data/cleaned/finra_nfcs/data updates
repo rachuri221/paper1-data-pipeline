@@ -3,8 +3,8 @@ FINRA NFCS 2018 State-by-State Survey
 Date Downloaded: 2026-06-13
 Version/Wave: 2018 State-by-State Survey
 Files: NFCS 2018 State Data 190603 (.csv, .dta, .sav), Data File Info PDF, Methodology PDF, Questionnaire PDF
-Rows: 27092
-Columns: 128
+CSV Rows: 27092
+CSV Columns: 128
 
 The 2018 FINRA National Financial Capability Study (NFCS) State-by-State Survey was downloaded and stored in /data/raw/finra_nfcs/. Documentation files, methodology notes, and questionnaires were downloaded alongside the primary dataset. Initial review indicates that the dataset contains survey responses on financial literacy, saving behavior, debt, credit usage, and financial well-being. Variable definitions and survey methodology are well documented in the accompanying materials. No cleaning actions have been performed on the raw data.
 
@@ -13,7 +13,7 @@ FINRA NFCS 2021 State-by-State Survey
 Date Downloaded: 2026-06-13
 Version/Wave: 2021 State-by-State Survey
 Files: NFCS 2021 State Data 220627 (.csv, .dta, .sav), Data File Info PDF, Methodology PDF, Questionnaire PDF
-Rows: 27199
-Columns: 126
+CSV Rows: 27199
+CSV Columns: 126
 
 The 2021 FINRA National Financial Capability Study (NFCS) State-by-State Survey was downloaded and stored in /data/raw/finra_nfcs/. Supporting documentation, methodology files, and questionnaires were included with the download. The dataset contains updated measures of financial literacy, financial behaviors, savings, debt, and household financial conditions. Variable coding and survey design appear well documented. No modifications have been made to the raw files.
