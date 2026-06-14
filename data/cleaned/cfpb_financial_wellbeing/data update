@@ -1,1 +1,9 @@
+CFPB Financial Well-Being Survey
 
+Date Downloaded: 6-13-2026
+Version/Wave: Full CFPB Financial Well-Being Survey Dataset
+Files: CFPB Financial Well-Being Survey CSV
+Rows: 6395
+Columns: 229
+
+The CFPB Financial Well-Being Survey dataset was downloaded and stored in /data/raw/cfpb_financial_wellbeing/. The dataset contains measures related to consumer financial well-being, financial behaviors, financial knowledge, and demographic characteristics. Documentation and codebooks were downloaded when available. Initial review suggests the dataset is intended for analysis of factors associated with financial well-being. No cleaning or transformations have been performed on the raw data.
