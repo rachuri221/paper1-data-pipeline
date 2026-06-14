@@ -2,8 +2,8 @@ Federal Reserve Survey of Consumer Finances (SCF) 2016
 
 Date Downloaded: 6-13-2026
 Version/Wave: 2016 SCF
-Files: SCF data (scf2022s.zip)
-Rows: not accessible
-Columns: not accessible
+Files: SCF data (scf2022s.csv)
+Rows: 22976
+Columns: 353
 
 The 2016 Survey of Consumer Finances (SCF) dataset was downloaded and stored in /data/raw/scf/. The dataset contains detailed information on household assets, liabilities, income, wealth, and financial decision-making. Associated documentation and codebooks were retained with the raw data. No modifications have been made to the original files.
