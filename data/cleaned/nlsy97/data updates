@@ -1,1 +1,9 @@
+NLSY97
 
+Date Downloaded: 6-13-2026
+Version/Wave: NLSY97 Extract via NLS Investigator
+Files: NLSY CSV (file named default)
+Rows: 11552
+Columns: 6
+
+The National Longitudinal Survey of Youth 1997 (NLSY97) extract was downloaded through the NLS Investigator system and stored in /data/raw/nlsy97/. Variables related to income, savings, credit, education, and demographic characteristics were selected according to project requirements. Documentation and extraction specifications were retained alongside the data. No cleaning procedures have been applied to the raw dataset.
