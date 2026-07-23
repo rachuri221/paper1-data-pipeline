@@ -1,0 +1,7 @@
+source_dataset,survey_year,respondent_id,age,age_band,female,education_level,census_region,household_size,underserved_200fpl,underserved_method,household_income_2020_usd,income_is_banded,financial_knowledge_score,savings_behavior_index,credit_behavior_index,spending_behavior_index,weight
+cfpb_nfwbs_2016,2016,12520,,18-24,0.0,2,2,3,1.0,direct_PCTLT200FPL,16175.0,True,83.33,0.0,,10.42,1.62844557614607
+cfpb_nfwbs_2016,2016,8593,,18-24,0.0,3,4,5,0.0,direct_PCTLT200FPL,134793.0,True,91.67,0.0,,8.33,1.74004707442877
+cfpb_nfwbs_2016,2016,13885,,18-24,0.0,2,3,4,0.0,direct_PCTLT200FPL,16175.0,True,41.67,6.67,,6.25,1.74197685328675
+cfpb_nfwbs_2016,2016,10310,,18-24,1.0,3,4,5,1.0,direct_PCTLT200FPL,48526.0,True,0.0,90.0,,59.38,1.61326867917422
+cfpb_nfwbs_2016,2016,10097,,18-24,0.0,3,2,2,0.0,direct_PCTLT200FPL,16175.0,True,0.0,40.95,,52.78,1.31568878483462
+cfpb_nfwbs_2016,2016,7165,,18-24,1.0,4,4,1,0.0,direct_PCTLT200FPL,26959.0,True,0.0,60.0,,50.0,0.651464001800686

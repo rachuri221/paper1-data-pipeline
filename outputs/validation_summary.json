@@ -1,0 +1,141 @@
+{
+  "cfpb_nfwbs_2016": {
+    "steps": {
+      "raw": 6394,
+      "age_18_24": 414,
+      "outcome_present": 414,
+      "dropped_no_outcome": 0
+    },
+    "imputations": [
+      "savings_behavior_index: 0.24% -> con-imputed (62.86)",
+      "spending_behavior_index: 0.48% -> con-imputed (58.33)"
+    ],
+    "validation": {
+      "dataset": "cfpb_nfwbs_2016",
+      "n": 414,
+      "nulls_in_primary": {
+        "financial_knowledge_score": 0,
+        "savings_behavior_index": 0,
+        "credit_behavior_index": 414,
+        "spending_behavior_index": 0
+      },
+      "dup_ids": 0,
+      "range_violations": {},
+      "outliers_gt3sd": {
+        "financial_knowledge_score": 3,
+        "spending_behavior_index": 3
+      }
+    },
+    "path": "data/cleaned/cfpb_nfwbs_2016/cfpb_nfwbs_2016_clean.csv"
+  },
+  "scf_2022": {
+    "steps": {
+      "raw": 22975,
+      "age_18_24": 555,
+      "outcome_present": 555,
+      "dropped_no_outcome": 0
+    },
+    "imputations": [],
+    "validation": {
+      "dataset": "scf_2022",
+      "n": 555,
+      "nulls_in_primary": {
+        "financial_knowledge_score": 0,
+        "savings_behavior_index": 0,
+        "credit_behavior_index": 0,
+        "spending_behavior_index": 0
+      },
+      "dup_ids": 0,
+      "range_violations": {},
+      "outliers_gt3sd": {
+        "household_income_2020_usd": 5,
+        "spending_behavior_index": 5
+      }
+    },
+    "path": "data/cleaned/scf_2022/scf_2022_clean.csv"
+  },
+  "nfcs_2018": {
+    "steps": {
+      "raw": 27091,
+      "age_18_24": 2795,
+      "outcome_present": 2795,
+      "dropped_no_outcome": 0
+    },
+    "imputations": [
+      "savings_behavior_index: 1.43% -> con-imputed (50)",
+      "spending_behavior_index: 2.72% -> con-imputed (62.5)"
+    ],
+    "validation": {
+      "dataset": "nfcs_2018",
+      "n": 2795,
+      "nulls_in_primary": {
+        "financial_knowledge_score": 0,
+        "savings_behavior_index": 0,
+        "credit_behavior_index": 0,
+        "spending_behavior_index": 0
+      },
+      "dup_ids": 0,
+      "range_violations": {},
+      "outliers_gt3sd": {
+        "household_income_2020_usd": 60
+      }
+    },
+    "path": "data/cleaned/nfcs_2018/nfcs_2018_clean.csv"
+  },
+  "nfcs_2021": {
+    "steps": {
+      "raw": 27118,
+      "age_18_24": 3009,
+      "outcome_present": 3009,
+      "dropped_no_outcome": 0
+    },
+    "imputations": [
+      "savings_behavior_index: 2.19% -> con-imputed (50)",
+      "spending_behavior_index: 2.76% -> con-imputed (62.5)"
+    ],
+    "validation": {
+      "dataset": "nfcs_2021",
+      "n": 3009,
+      "nulls_in_primary": {
+        "financial_knowledge_score": 0,
+        "savings_behavior_index": 0,
+        "credit_behavior_index": 0,
+        "spending_behavior_index": 0
+      },
+      "dup_ids": 0,
+      "range_violations": {},
+      "outliers_gt3sd": {
+        "household_income_2020_usd": 49
+      }
+    },
+    "path": "data/cleaned/nfcs_2021/nfcs_2021_clean.csv"
+  },
+  "nlsy97_1997cohort": {
+    "steps": {
+      "raw": 8984,
+      "age_18_24(age20 anchor)": 8984,
+      "outcome_present": "savings only (~79%); knowledge/credit/spending not fielded \u2014 kept all records",
+      "final_n": 8984
+    },
+    "imputations": [],
+    "validation": {
+      "dataset": "nlsy97_1997cohort",
+      "n": 8984,
+      "nulls_in_primary": {
+        "financial_knowledge_score": 8984,
+        "savings_behavior_index": 1911,
+        "credit_behavior_index": 8984,
+        "spending_behavior_index": 8984
+      },
+      "dup_ids": 0,
+      "range_violations": {},
+      "outliers_gt3sd": {
+        "household_income_2020_usd": 199,
+        "net_worth_2020_usd": 119,
+        "financial_assets_age20_2020_usd": 63,
+        "debt_age20_2020_usd": 151
+      }
+    },
+    "path": "data/cleaned/nlsy97_1997cohort/nlsy97_1997cohort_clean.csv"
+  }
+}

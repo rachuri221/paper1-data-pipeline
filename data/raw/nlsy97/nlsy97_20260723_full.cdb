@@ -1,0 +1,4125 @@
+R00001.00    [PUBID]                                        Survey Year: 1997
+  PRIMARY VARIABLE
+
+             PUBID, YOUTH CASE IDENTIFICATION CODE
+ 
+COMMENT: YOUTH CASE IDENTIFICATION CODE
+ 
+       0           0
+     998           1 TO 999
+     999        1000 TO 1999
+     997        2000 TO 2999
+     996        3000 TO 3999
+     998        4000 TO 4999
+     996        5000 TO 5999
+     994        6000 TO 6999
+     994        7000 TO 7999
+     989        8000 TO 8999
+      23        9000 TO 9999
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:           9022        Mean:              4504.3
+ 
+Lead In: R72976.00[Default]
+Default Next Question: R05363.00
+--------------------------------------------------------------------------------
+R00416.03    [YSCH-9600_000004]                             Survey Year: 1997
+  PRIMARY VARIABLE
+
+             SUBJECTS R TOOK ADVANCED PLACEMENT EXAMS (COLL): ECONOMICS
+ 
+In which subjects did you take the AP exam?
+ 
+(SELECT ALL THAT APPLY.)
+ 
+UNIVERSE: R with history of formal schooling; attended 11th grade/higher; took 
+AP test
+ 
+RESPONSE CHOICE: "Computer Science (A,AB)"
+ 
+       0       1 SELECTED
+       1       0 NOT SELECTED
+  -------
+       1
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>       1   VALID SKIP(-4)    8983     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              0        Mean:                   0
+ 
+Lead In: R00416.02[Default]
+Default Next Question: R00416.04
+--------------------------------------------------------------------------------
+R05075.00    [YINC-18700]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             R HAVE ANY CHECKING, SAVINGS, OR MONEY MARKET ACCOUNTS?
+ 
+Excluding retirement plan savings, do [you or your spouse/partner] have any 
+checking accounts, savings accounts or money market accounts or funds, including
+any such accounts held in investment trusts?
+ 
+(IF RESPONDENT NEEDS CLARIFICATION: THESE COULD INCLUDE ACCOUNTS AT BANKS, 
+SAVINGS AND LOAN ASSOCIATIONS, PASSBOOK ACCOUNTS, SHARE ACCOUNTS, CHRISTMAS CLUB
+ACCOUNTS, OR ANY OTHER TYPE OF CHECKING OR SAVINGS ACCOUNT OR MONEY MARKET 
+FUNDS.)
+ 
+UNIVERSE: R is independent
+ 
+      69       1 YES
+     352       0 NO   (Go To R05078.00)
+  -------
+     421
+ 
+Refusal(-1)            4   (Go To R05078.00)
+Don't Know(-2)         4   (Go To R05078.00)
+TOTAL =========>     429   VALID SKIP(-4)    8555     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              1        Mean:                 .16
+ 
+Lead In: R05073.00[Default] R05074.00[Default]  R05072.00[-2:0]
+Default Next Question: R05076.00
+--------------------------------------------------------------------------------
+R05076.00    [YINC-18800]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             TOTAL MARKET VALUE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+What is the total value of all the savings in these types of plans?
+ 
+UNIVERSE: R is independent; have checking/savings/money market accounts
+ 
+       3           0
+      52           1 TO 4999
+       2        5000 TO 9999
+       0       10000 TO 14999
+       0       15000 TO 19999
+       0       20000 TO 24999
+       0       25000 TO 29999
+       0       30000 TO 39999
+       0       40000 TO 49999
+       0       50000 TO 59999
+       0       60000 TO 69999
+       0       70000 TO 79999
+       0       80000 TO 89999
+       0       90000 TO 99999
+       0      100000 TO 149999
+       0      150000 TO 99999999: 150000+
+  -------
+      57
+ 
+Refusal(-1)            2   (Go To R05077.00)
+Don't Know(-2)        10   (Go To R05077.00)
+TOTAL =========>      69   VALID SKIP(-4)    8915     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:           6000        Mean:              751.04
+ 
+Lead In: R05075.00[Default]
+Default Next Question: R05078.00
+--------------------------------------------------------------------------------
+R05077.00    [YINC-18900]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             EST MARKET VALUE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+(HAND CARD GG)
+ 
+Please look at this card. Can you tell me the letter of the category that is 
+your best estimate of that amount?
+ 
+UNIVERSE: R is independent; have checking/savings/money market accounts; DK/RF 
+to report market value of these accounts
+ 
+       4       1 A. $1              -        $1,000
+       0       2 B.  $1,001      -       $2,500
+       1       3 C.  $2,501      -       $5,000
+       1       4 D.  $5,001      -     $10,000
+       1       5 E.   $10,001    -     $25,000
+       1       6 F.   $25,001    -     $50,000
+       1       7 G.   More than   $50,000
+  -------
+       9
+ 
+Refusal(-1)            2
+Don't Know(-2)         1
+TOTAL =========>      12   VALID SKIP(-4)    8972     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              7        Mean:                3.22
+ 
+Lead In: R05076.00[-2:-1]
+Default Next Question: R05078.00
+--------------------------------------------------------------------------------
+R05363.00    [KEY!SEX]                                      Survey Year: 1997
+  PRIMARY VARIABLE
+
+             KEY!SEX, RS SEX (SYMBOL)
+ 
+COMMENT: Sex of Youth
+ 
+    4599       1 Male
+    4385       2 Female
+       0       0 No Information
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              2        Mean:                1.49
+ 
+Lead In: R00001.00[Default]
+Default Next Question: R05364.00
+--------------------------------------------------------------------------------
+R05364.01    [KEY!BDATE_M]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+     816           1: January
+     693           2: February
+     760           3: March
+     659           4: April
+     689           5: May
+     720           6: June
+     762           7: July
+     782           8: August
+     839           9: September
+     765          10: October
+     763          11: November
+     736          12: December
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             12        Mean:                6.56
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Lead In: None.
+Default Next Question: R05364.02
+--------------------------------------------------------------------------------
+R05364.02    [KEY!BDATE_Y]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:           1980        Max:           1984        Mean:             1982.01
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Lead In: R05364.01[Default]
+Default Next Question: R05366.00
+--------------------------------------------------------------------------------
+R12003.00    [CV_CENSUS_REGION]                             Survey Year: 1997
+  PRIMARY VARIABLE
+
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+    1585       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    2050       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3359       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1990       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              4        Mean:                2.64
+ 
+Lead In: R12002.00[Default]
+Default Next Question: R12004.00
+--------------------------------------------------------------------------------
+R12045.00    [CV_INCOME_GROSS_YR]                           Survey Year: 1997
+  PRIMARY VARIABLE
+
+             GROSS HH INCOME IN PAST YEAR
+ 
+Gross household income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       3     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     100           0
+      71           1 TO 1000
+      41        1001 TO 2000
+      98        2001 TO 3000
+     139        3001 TO 5000
+     465        5001 TO 10000
+     925       10001 TO 20000
+     819       20001 TO 30000
+     835       30001 TO 40000
+     765       40001 TO 50000
+     834       50001 TO 65000
+     610       65001 TO 80000
+     397       80001 TO 100000
+     321      100001 TO 150000
+      32      150001 TO 200000
+     133      200001 TO 999999: 200001+
+  -------
+    6588
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1458
+TOTAL =========>    8046   VALID SKIP(-4)     938     NON-INTERVIEW(-5)       0
+ 
+Min:         -48100        Max:         246474        Mean:             46361.7
+ 
+Lead In: R13027.00[Default]
+Default Next Question: R12046.00
+--------------------------------------------------------------------------------
+R12047.00    [CV_HH_NET_WORTH_P]                            Survey Year: 1997
+  PRIMARY VARIABLE
+
+             NET WORTH OF HOUSEHOLD ACCORDING TO PARENT
+ 
+Household net worth.
+ 
+COMMENT: from parent interview
+ 
+NOTE: /*Topcoded at predetermined values.  Respondents with household net worth 
+values above $600,000 were topcoded to a value of $600,000.  Negative values of 
+-1, -2, -3, -4, or -5 do not reflect negative monetary amounts; these numbers 
+represent standard NLSY97 codes.*/
+ 
+     286     -999999 TO -3000: < -2999
+      37       -2999 TO -2000
+      56       -1999 TO -1000
+      47        -999 TO -6
+       3           0
+     313           1 TO 1000
+     273        1001 TO 2000
+     160        2001 TO 3000
+     426        3001 TO 5000
+     507        5001 TO 10000
+     602       10001 TO 20000
+     435       20001 TO 30000
+     334       30001 TO 40000
+     285       40001 TO 50000
+     393       50001 TO 65000
+     304       65001 TO 80000
+     321       80001 TO 100000
+     567      100001 TO 150000
+     350      150001 TO 200000
+     677      200001 TO 500000
+     243      500001 TO 1000000
+       0     1000001 TO 1500000
+       0     1500001 TO 2000000
+       0     2000001 TO 999999999: 2000001+
+  -------
+    6619
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1314
+TOTAL =========>    7933   VALID SKIP(-4)    1051     NON-INTERVIEW(-5)       0
+ 
+Min:        -935251        Max:         600000        Mean:            90180.98
+ 
+Lead In: R12046.00[Default]
+Default Next Question: R12048.00
+--------------------------------------------------------------------------------
+R12048.00    [CV_HH_NET_WORTH_Y]                            Survey Year: 1997
+  PRIMARY VARIABLE
+
+             NET WORTH OF HOUSEHOLD ACCORDING TO R
+ 
+Household net worth.
+ 
+COMMENT: from youth interview
+ 
+NOTE: /*Topcoded at predetermined values.  Respondents with household net worth 
+values above $600,000 were topcoded to a value of $600,000.  Negative values of 
+-1, -2, -3, -4, or -5 do not reflect negative monetary amounts; these numbers 
+represent standard NLSY97 codes.*/
+ 
+       1     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       1       -1999 TO -1000
+       0        -999 TO -6
+       0           0
+     105           1 TO 1000
+      24        1001 TO 2000
+       5        2001 TO 3000
+      30        3001 TO 5000
+      32        5001 TO 10000
+      26       10001 TO 20000
+       3       20001 TO 30000
+      16       30001 TO 40000
+       5       40001 TO 50000
+       6       50001 TO 65000
+       8       65001 TO 80000
+       1       80001 TO 100000
+       6      100001 TO 150000
+       3      150001 TO 200000
+       1      200001 TO 500000
+       5      500001 TO 1000000
+       0     1000001 TO 1500000
+       0     1500001 TO 2000000
+       0     2000001 TO 999999999: 2000001+
+  -------
+     278
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     154
+TOTAL =========>     432   VALID SKIP(-4)    8552     NON-INTERVIEW(-5)       0
+ 
+Min:          -6500        Max:         600000        Mean:            26510.28
+ 
+Lead In: R12047.00[Default]
+Default Next Question: R12049.00
+--------------------------------------------------------------------------------
+R12049.00    [CV_HH_POV_RATIO]                              Survey Year: 1997
+  PRIMARY VARIABLE
+
+             RATIO OF HOUSEHOLD INCOME TO POVERTY LEVEL
+ 
+Ratio of household income to poverty level in the previous year.
+ 
+NOTE: /* Topcoded. 2 IMPLIED DECIMAL PLACES */
+ 
+     125           0
+    1396           1 TO 99: .01-.99
+    1392         100 TO 199: 1.00-1.99
+    1289         200 TO 299: 2.00-2.99
+     962         300 TO 399: 3.00-3.99
+     573         400 TO 499: 4.00-4.99
+     321         500 TO 599: 5.00-5.99
+     174         600 TO 699: 6.00-6.99
+      89         700 TO 799: 7.00-7.99
+      56         800 TO 899: 8.00-8.99
+      44         900 TO 999: 9.00-9.99
+       7        1000 TO 1099: 10.00-10.99
+       0        1100 TO 1199: 11.00-11.99
+       0        1200 TO 1299: 12.00-12.99
+       0        1300 TO 1399: 13.00-13.99
+       0        1400 TO 1499: 14.00-14.99
+       0        1500 TO 1599: 15.00-15.99
+     133        1600 TO 1699: 16.00-16.99
+       0        1700 TO 1799: 17.00-17.99
+       0        1800 TO 1899: 18.00-18.99
+       0        1900 TO 1999: 19.00-19.99
+       0        2000 TO 2999: 20.00-29.99
+       0        3000 TO 9999: 30.00+
+  -------
+    6561
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1485
+TOTAL =========>    8046   VALID SKIP(-4)     938     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:           1627        Mean:              283.18
+ 
+Lead In: R12048.00[Default]
+Default Next Question: R12050.00
+--------------------------------------------------------------------------------
+R12054.00    [CV_HH_SIZE]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             HOUSEHOLD SIZE
+ 
+Household size as of the survey date.
+ 
+       0           0
+       1           1
+     480           2
+    1605           3
+    2857           4
+    2163           5
+    1052           6
+     428           7
+     220           8
+      79           9
+      57          10
+      27          11
+       3          12
+       7          13
+       1          14
+       2          15
+       2          16
+       0          17
+       0          18
+       0          19
+       0          20 TO 99: 20+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             16        Mean:                4.55
+ 
+Lead In: R12053.00[Default]
+Default Next Question: R12055.00
+--------------------------------------------------------------------------------
+R12175.00    [CV_URBAN-RURAL]                               Survey Year: 1997
+  PRIMARY VARIABLE
+
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+    2030       0 Rural
+    6574       1 Urban
+     380       2 Unknown
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              2        Mean:                 .82
+ 
+Lead In: R12112.00[Default]
+Default Next Question: R12176.00
+--------------------------------------------------------------------------------
+R12358.00    [CV_SAMPLE_TYPE]                               Survey Year: 1997
+  PRIMARY VARIABLE
+
+             SAMPLE TYPE.  CROSS-SECTIONAL OR OVERSAMPLE
+ 
+Sample type: Is the respondent a member of the cross-sectional sample or the 
+oversample?
+ 
+    6748       1 Cross-sectional
+    2236       0 Oversample
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              1        Mean:                 .75
+ 
+Lead In: R12338.00[Default]
+Default Next Question: R12359.00
+--------------------------------------------------------------------------------
+R14826.00    [KEY!RACE_ETHNICITY]                           Survey Year: 1997
+  PRIMARY VARIABLE
+
+             KEY!RACE_ETHNICITY, COMBINED RACE AND ETHNICITY (SYMBOL)
+ 
+COMMENT: Combined race - ethnicity variable
+ 
+    2335       1 Black
+    1901       2 Hispanic
+      83       3 Mixed Race (Non-Hispanic)
+    4665       4 Non-Black / Non-Hispanic
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              4        Mean:                2.79
+ 
+Lead In: R05387.00[Default]
+Default Next Question: R05389.00
+--------------------------------------------------------------------------------
+R17040.04    [YSCH-9600~000005]                             Survey Year: 1998
+  PRIMARY VARIABLE
+
+             SUBJECTS R TOOK ADVANCED PLACEMENT EXAMS: ECONOMICS
+ 
+In which subjects did you take the AP exam?
+ 
+(SELECT ALL THAT APPLY.)
+ 
+UNIVERSE: R with history of formal schooling; attended 11th grade/higher; DLI AP
+test questions not asked; took AP test
+ 
+RESPONSE CHOICE: "Economics (Microeconomics, Macroeconomics)"
+ 
+       9       1 SELECTED
+     335       0 NOT SELECTED
+  -------
+     344
+ 
+Refusal(-1)            0
+Don't Know(-2)         2
+TOTAL =========>     346   VALID SKIP(-4)    8040     NON-INTERVIEW(-5)     598
+ 
+Min:              0        Max:              1        Mean:                 .03
+ 
+Lead In: R17040.03[Default]
+Default Next Question: R17040.05
+--------------------------------------------------------------------------------
+R23706.00    [YAST-4400]                                    Survey Year: 1998
+  PRIMARY VARIABLE
+
+             R HAVE ANY CHECKING, SAVINGS, OR MONEY MARKET ACCOUNTS?
+ 
+Excluding retirement savings, do [you/you or your spouse/partner] have any 
+checking accounts, savings accounts or money market accounts or funds, including
+any such accounts held in investment trusts?
+ 
+UNIVERSE: R is independent
+ 
+     488       1 YES, RESPONDENT HAS OWN ACCOUNT   (Go To R23707.00)
+      12       2 YES, RESPONDENT HAS OWN ACCOUNTS AND ACCOUNTS JOINTLY WITH 
+                      SPOUSE/PARTNER   (Go To R23707.00)
+       9       3 YES, RESPONDENT ONLY HAS ACCOUNTS JOINTLY WITH SPOUSE/PARTNER  
+                      (Go To R23707.00)
+      17       4 YES, SPOUSE/PARTNER HAS ACCOUNTS SEPARATELY FROM RESPONDENT
+    1301       0 NO
+  -------
+    1827
+ 
+Refusal(-1)            5
+Don't Know(-2)         3
+TOTAL =========>    1835   VALID SKIP(-4)    6551     NON-INTERVIEW(-5)     598
+ 
+Min:              0        Max:              4        Mean:                 .33
+ 
+Lead In: R23701.00[Default] R23705.00[Default]
+Default Next Question: R23718.00
+--------------------------------------------------------------------------------
+R23707.00    [YAST-4420]                                    Survey Year: 1998
+  PRIMARY VARIABLE
+
+             TOTAL MARKET VALUE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+What is the (total) current balance in all of the checking, savings and money 
+market accounts [you have/you have separately and jointly/you have jointly]?  
+(Average balance over the past month)
+ 
+INTERVIEWER: IF RESPONDENT IS UNABLE TO GIVE AN EXACT AMOUNT, PROBE FOR A RANGE.
+ 
+UNIVERSE: R is independent; R or S/P have checking/savings/money market 
+accounts/funds
+ 
+     466       1 SELECT TO ENTER AMOUNT   (Go To R23708.00)
+      25       2 SELECT TO ENTER RANGE   (Go To R23710.00)
+  -------
+     491
+ 
+Refusal(-1)            7
+Don't Know(-2)        11
+TOTAL =========>     509   VALID SKIP(-4)    7877     NON-INTERVIEW(-5)     598
+ 
+Min:              1        Max:              2        Mean:                1.05
+ 
+Lead In: R23706.00[1:3]
+Default Next Question: R23709.00
+--------------------------------------------------------------------------------
+R23709.00    [YAST-4426]                                    Survey Year: 1998
+  PRIMARY VARIABLE
+
+             ESTIMATED BALANCE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+(HAND R SHOWCARD GG)
+ 
+Please look at this card. Can you tell me the letter of the category that is 
+your best estimate of that amount?
+ 
+UNIVERSE: R is independent; R or S/P have checking/savings/money market 
+accounts/funds; DK/RF to report total market value of these accounts/funds
+ 
+      22       1 A. $1              -        $1,000
+       3       2 B.  $1,001      -       $2,500
+       0       3 C.  $2,501      -       $5,000
+       3       4 D.  $5,001      -     $10,000
+       3       5 E.   $10,001    -     $25,000
+       0       6 F.   $25,001    -     $50,000
+       0       7 G.   More than   $50,000
+  -------
+      31
+ 
+Refusal(-1)           10
+Don't Know(-2)         6
+TOTAL =========>      47   VALID SKIP(-4)    8339     NON-INTERVIEW(-5)     598
+ 
+Min:              1        Max:              5        Mean:                1.77
+ 
+Lead In: R23707.00[Default]  R23708.00[-2:-1]
+Default Next Question: R23710.00
+--------------------------------------------------------------------------------
+R25588.00    [CV_CENSUS_REGION]                             Survey Year: 1998
+  PRIMARY VARIABLE
+
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1451       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1903       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3160       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1846       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    8360
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       4
+TOTAL =========>    8364   VALID SKIP(-4)      22     NON-INTERVIEW(-5)     598
+ 
+Min:              1        Max:              4        Mean:                2.65
+ 
+Lead In: R25587.00[Default]
+Default Next Question: R25589.00
+--------------------------------------------------------------------------------
+R25632.01    [CV_HGC_9899]                                  Survey Year: 1998
+  PRIMARY VARIABLE
+
+             RS HIGHEST GRADE COMPLETED PRIOR TO THE 98/99 ACAD YEAR
+ 
+The highest elementary or secondary grade completed prior to the start of the 
+1998/1999 academic school year.
+ 
+       0       0 NONE
+       0       1 1ST GRADE
+       0       2 2ND GRADE
+       0       3 3RD GRADE
+       1       4 4TH GRADE
+      10       5 5TH GRADE
+     116       6 6TH GRADE
+     752       7 7TH GRADE
+    1959       8 8TH GRADE
+    1785       9 9TH GRADE
+    1638      10 10TH GRADE
+    1389      11 11TH GRADE
+     653      12 12TH GRADE
+       0      95 UNGRADED
+  -------
+    8303
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      82
+TOTAL =========>    8385   VALID SKIP(-4)       1     NON-INTERVIEW(-5)     598
+ 
+Min:              4        Max:             12        Mean:                 9.3
+ 
+Lead In: R25632.00[Default]
+Default Next Question: R25633.00
+--------------------------------------------------------------------------------
+R25633.00    [CV_INCOME_GROSS_YR]                           Survey Year: 1998
+  PRIMARY VARIABLE
+
+             GROSS HH INCOME IN PAST YEAR
+ 
+Gross household income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+      77           0
+      36           1 TO 1000
+      19        1001 TO 2000
+      34        2001 TO 3000
+      33        3001 TO 5000
+      79        5001 TO 10000
+     142       10001 TO 20000
+      85       20001 TO 30000
+     123       30001 TO 40000
+      84       40001 TO 50000
+      91       50001 TO 65000
+      95       65001 TO 80000
+      64       80001 TO 100000
+      47      100001 TO 150000
+       0      150001 TO 200000
+      40      200001 TO 999999: 200001+
+  -------
+    1049
+ 
+Refusal(-1)           25
+Don't Know(-2)       744
+Invalid Skip(-3)      17
+TOTAL =========>    1835   VALID SKIP(-4)    6551     NON-INTERVIEW(-5)     598
+ 
+Min:              0        Max:         425586        Mean:            51228.72
+ 
+Lead In: R25632.01[Default]
+Default Next Question: R25634.00
+--------------------------------------------------------------------------------
+R25634.00    [CV_HH_NET_WORTH_Y]                            Survey Year: 1998
+  PRIMARY VARIABLE
+
+             NET WORTH OF HOUSEHOLD ACCORDING TO R
+ 
+Household net worth.
+ 
+COMMENT: from youth interview
+ 
+NOTE: /*Topcoded at predetermined values.  Respondents with household net worth 
+values above $600,000 were topcoded to a value of $600,000.  Negative values of 
+-1, -2, -3, -4, or -5 do not reflect negative monetary amounts; these numbers 
+represent standard NLSY97 codes.*/
+ 
+      10     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       2       -1999 TO -1000
+       1        -999 TO -1
+       1           0
+      10           1 TO 1000
+      12        1001 TO 2000
+     686        2001 TO 3000
+     124        3001 TO 5000
+     282        5001 TO 10000
+     151       10001 TO 20000
+      20       20001 TO 30000
+      51       30001 TO 40000
+      16       40001 TO 50000
+       1       50001 TO 65000
+      32       65001 TO 80000
+       6       80001 TO 100000
+       0      100001 TO 150000
+      33      150001 TO 200000
+      28      200001 TO 999999999: 200001+
+  -------
+    1466
+ 
+Refusal(-1)           49
+Don't Know(-2)       319
+Invalid Skip(-3)       1
+TOTAL =========>    1835   VALID SKIP(-4)    6551     NON-INTERVIEW(-5)     598
+ 
+Min:         -45000        Max:         517500        Mean:            17486.47
+ 
+Lead In: R25633.00[Default]
+Default Next Question: R25635.00
+--------------------------------------------------------------------------------
+R25635.00    [CV_HH_POV_RATIO]                              Survey Year: 1998
+  PRIMARY VARIABLE
+
+             RATIO OF HOUSEHOLD INCOME TO POVERTY LEVEL
+ 
+Ratio of household income to poverty level in the previous year.
+ 
+NOTE: /* Topcoded. 2 IMPLIED DECIMAL PLACES */
+ 
+      76           0
+     273           1 TO 99: .01-.99
+     183         100 TO 199: 1.00-1.99
+     148         200 TO 299: 2.00-2.99
+     119         300 TO 399: 3.00-3.99
+      88         400 TO 499: 4.00-4.99
+      49         500 TO 599: 5.00-5.99
+      36         600 TO 699: 6.00-6.99
+      15         700 TO 799: 7.00-7.99
+       4         800 TO 899: 8.00-8.99
+       1         900 TO 999: 9.00-9.99
+       0        1000 TO 1099: 10.00-10.99
+       0        1100 TO 1199: 11.00-11.99
+       0        1200 TO 1299: 12.00-12.99
+       0        1300 TO 1399: 13.00-13.99
+       0        1400 TO 1499: 14.00-14.99
+       0        1500 TO 1599: 15.00-15.99
+       0        1600 TO 1699: 16.00-16.99
+       0        1700 TO 1799: 17.00-17.99
+       0        1800 TO 1899: 18.00-18.99
+       0        1900 TO 1999: 19.00-19.99
+       0        2000 TO 2999: 20.00-29.99
+      33        3000 TO 9999: 30.00+
+  -------
+    1025
+ 
+Refusal(-1)           24
+Don't Know(-2)       724
+Invalid Skip(-3)      57
+TOTAL =========>    1830   VALID SKIP(-4)    6556     NON-INTERVIEW(-5)     598
+ 
+Min:              0        Max:           3227        Mean:              321.03
+ 
+Lead In: R25634.00[Default]
+Default Next Question: R25636.00
+--------------------------------------------------------------------------------
+R25637.00    [CV_HH_SIZE]                                   Survey Year: 1998
+  PRIMARY VARIABLE
+
+             HOUSEHOLD SIZE
+ 
+Household size as of the survey date.
+ 
+       0           0
+      66           1
+     575           2
+    1626           3
+    2575           4
+    1900           5
+     937           6
+     369           7
+     188           8
+      84           9
+      26          10
+      24          11
+       6          12
+       3          13
+       2          14
+       3          15
+       0          16
+       0          17
+       0          18
+       0          19
+       0          20 TO 99: 20+
+  -------
+    8384
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       2
+TOTAL =========>    8386   VALID SKIP(-4)       0     NON-INTERVIEW(-5)     598
+ 
+Min:              1        Max:             15        Mean:                4.42
+ 
+Lead In: R25636.00[Default]
+Default Next Question: R25638.00
+--------------------------------------------------------------------------------
+R25768.00    [CV_URBAN-RURAL]                               Survey Year: 1998
+  PRIMARY VARIABLE
+
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    2047       0 Rural
+    6090       1 Urban
+     215       2 Unknown
+  -------
+    8352
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      12
+TOTAL =========>    8364   VALID SKIP(-4)      22     NON-INTERVIEW(-5)     598
+ 
+Min:              0        Max:              2        Mean:                 .78
+ 
+Lead In: R25702.00[Default]
+Default Next Question: R25769.00
+--------------------------------------------------------------------------------
+R29965.04    [YSCH-9600~000005]                             Survey Year: 1999
+  PRIMARY VARIABLE
+
+             SUBJECTS R TOOK ADVANCED PLACEMENT EXAMS: ECONOMICS
+ 
+In which subjects did you take the AP exam?
+ 
+(SELECT ALL THAT APPLY.)
+ 
+UNIVERSE: R with history of formal schooling; attended 11th grade/higher; DLI AP
+test questions not asked; took AP test
+ 
+RESPONSE CHOICE: "Economics (Microeconomics, Macroeconomics)"
+ 
+       1       1 SELECTED
+      92       0 NOT SELECTED
+  -------
+      93
+ 
+Refusal(-1)            0
+Don't Know(-2)         1
+TOTAL =========>      94   VALID SKIP(-4)    8114     NON-INTERVIEW(-5)     776
+ 
+Min:              0        Max:              1        Mean:                 .01
+ 
+Lead In: R29965.03[Default]
+Default Next Question: R29965.05
+--------------------------------------------------------------------------------
+R36783.00    [YAST-4400]                                    Survey Year: 1999
+  PRIMARY VARIABLE
+
+             R HAVE ANY CHECKING, SAVINGS, OR MONEY MARKET ACCOUNTS?
+ 
+Excluding retirement savings, do [you/you or your spouse] have any checking 
+accounts, savings accounts or money market accounts or funds, including any such
+accounts held in investment trusts?
+ 
+UNIVERSE: R is independent
+ 
+    1104       1 YES, RESPONDENT HAS OWN ACCOUNT   (Go To R36784.00)
+      23       2 YES, RESPONDENT HAS OWN ACCOUNTS AND ACCOUNTS JOINTLY WITH 
+                      SPOUSE/PARTNER   (Go To R36784.00)
+      32       3 YES, RESPONDENT ONLY HAS ACCOUNTS JOINTLY WITH SPOUSE/PARTNER  
+                      (Go To R36784.00)
+      24       4 YES, SPOUSE/PARTNER HAS ACCOUNTS SEPARATELY FROM RESPONDENT
+    1912       0 NO
+  -------
+    3095
+ 
+Refusal(-1)            6
+Don't Know(-2)         3
+TOTAL =========>    3104   VALID SKIP(-4)    5104     NON-INTERVIEW(-5)     776
+ 
+Min:              0        Max:              4        Mean:                 .43
+ 
+Lead In: R36775.00[Default] R36779.00[Default] R36780.00[Default] 
+         R36782.00[Default]
+Default Next Question: R36795.00
+--------------------------------------------------------------------------------
+R36784.00    [YAST-4420]                                    Survey Year: 1999
+  PRIMARY VARIABLE
+
+             TOTAL MARKET VALUE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+What is the (total) current balance in all of the checking, savings and money 
+market accounts [you have/you have on your own and you have jointly with your 
+spouse or partner/you have jointly with your spouse or partner]?  (Average 
+balance over the past month)
+ 
+INTERVIEWER: IF RESPONDENT IS UNABLE TO GIVE AN EXACT AMOUNT, PROBE FOR A RANGE.
+ 
+UNIVERSE: R is independent; R or S/P have checking/savings/money market 
+accounts/funds
+ 
+    1100       1 SELECT TO ENTER AMOUNT   (Go To R36785.00)
+      37       2 SELECT TO ENTER RANGE   (Go To R36787.00)
+  -------
+    1137
+ 
+Refusal(-1)            7
+Don't Know(-2)        15
+TOTAL =========>    1159   VALID SKIP(-4)    7049     NON-INTERVIEW(-5)     776
+ 
+Min:              1        Max:              2        Mean:                1.03
+ 
+Lead In: R36783.00[1:3]
+Default Next Question: R36786.00
+--------------------------------------------------------------------------------
+R36786.00    [YAST-4426]                                    Survey Year: 1999
+  PRIMARY VARIABLE
+
+             ESTIMATED BALANCE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+(HAND R SHOWCARD GG)
+ 
+Please look at this card. Can you tell me the letter of the category that is 
+your best estimate of that amount?
+ 
+UNIVERSE: R is independent; R or S/P have checking/savings/money market 
+accounts/funds; DK/RF to report total market value of these accounts/funds
+ 
+      33       1 A. $1              -        $1,000
+      11       2 B.  $1,001      -       $2,500
+       6       3 C.  $2,501      -       $5,000
+       3       4 D.  $5,001      -     $10,000
+       0       5 E.   $10,001    -     $25,000
+       0       6 F.   $25,001    -     $50,000
+       0       7 G.   More than   $50,000
+  -------
+      53
+ 
+Refusal(-1)           19
+Don't Know(-2)        17
+TOTAL =========>      89   VALID SKIP(-4)    8119     NON-INTERVIEW(-5)     776
+ 
+Min:              1        Max:              4        Mean:                 1.6
+ 
+Lead In: R36784.00[Default]  R36785.00[-2:-1]
+Default Next Question: R36787.00
+--------------------------------------------------------------------------------
+R38803.00    [CV_CENSUS_REGION]                             Survey Year: 1999
+  PRIMARY VARIABLE
+
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1403       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1835       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3116       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1834       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    8188
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       2
+TOTAL =========>    8190   VALID SKIP(-4)      18     NON-INTERVIEW(-5)     776
+ 
+Min:              1        Max:              4        Mean:                2.66
+ 
+Lead In: R38801.00[Default]
+Default Next Question: R38804.00
+--------------------------------------------------------------------------------
+R38848.01    [CV_HGC_9900]                                  Survey Year: 1999
+  PRIMARY VARIABLE
+
+             RS HIGHEST GRADE COMPLETED PRIOR TO THE 99/00 ACAD YEAR
+ 
+The highest elementary or secondary grade completed prior to the start of the 
+1999/2000 academic school year.
+ 
+       0       0 NONE
+       0       1 1ST GRADE
+       0       2 2ND GRADE
+       0       3 3RD GRADE
+       0       4 4TH GRADE
+       2       5 5TH GRADE
+      29       6 6TH GRADE
+     134       7 7TH GRADE
+     966       8 8TH GRADE
+    1913       9 9TH GRADE
+    1731      10 10TH GRADE
+    1538      11 11TH GRADE
+    1811      12 12TH GRADE
+       4      95 UNGRADED
+  -------
+    8128
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      80
+TOTAL =========>    8208   VALID SKIP(-4)       0     NON-INTERVIEW(-5)     776
+ 
+Min:              5        Max:             95        Mean:               10.14
+ 
+Lead In: R38848.00[Default]
+Default Next Question: R38849.00
+--------------------------------------------------------------------------------
+R38849.00    [CV_INCOME_GROSS_YR]                           Survey Year: 1999
+  PRIMARY VARIABLE
+
+             GROSS HH INCOME IN PAST YEAR
+ 
+Gross household income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     155           0
+      47           1 TO 1000
+      38        1001 TO 2000
+      86        2001 TO 3000
+      66        3001 TO 5000
+     206        5001 TO 10000
+     332       10001 TO 20000
+     200       20001 TO 30000
+     232       30001 TO 40000
+     200       40001 TO 50000
+     242       50001 TO 65000
+     217       65001 TO 80000
+     162       80001 TO 100000
+     150      100001 TO 150000
+      66      150001 TO 200000
+      58      200001 TO 999999: 200001+
+  -------
+    2457
+ 
+Refusal(-1)           47
+Don't Know(-2)       590
+Invalid Skip(-3)      10
+TOTAL =========>    3104   VALID SKIP(-4)    5104     NON-INTERVIEW(-5)     776
+ 
+Min:              0        Max:         291681        Mean:            48698.22
+ 
+Lead In: R38848.01[Default]
+Default Next Question: R38850.00
+--------------------------------------------------------------------------------
+R38850.00    [CV_HH_NET_WORTH_Y]                            Survey Year: 1999
+  PRIMARY VARIABLE
+
+             NET WORTH OF HOUSEHOLD ACCORDING TO R
+ 
+Household net worth.
+ 
+COMMENT: from youth interview
+ 
+NOTE: /*Topcoded at predetermined values.  Respondents with household net worth 
+values above $600,000 were topcoded to a value of $600,000.  Negative values of 
+-1, -2, -3, -4, or -5 do not reflect negative monetary amounts; these numbers 
+represent standard NLSY97 codes.*/
+ 
+      25     -999999 TO -3000: < -2999
+       3       -2999 TO -2000
+       8       -1999 TO -1000
+      13        -999 TO -1
+       2           0
+      23           1 TO 1000
+      40        1001 TO 2000
+     963        2001 TO 3000
+     303        3001 TO 5000
+     518        5001 TO 10000
+     330       10001 TO 20000
+      78       20001 TO 30000
+     110       30001 TO 40000
+      41       40001 TO 50000
+      25       50001 TO 65000
+     102       65001 TO 80000
+      21       80001 TO 100000
+      14      100001 TO 150000
+      58      150001 TO 200000
+      51      200001 TO 999999999: 200001+
+  -------
+    2728
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     376
+TOTAL =========>    3104   VALID SKIP(-4)    5104     NON-INTERVIEW(-5)     776
+ 
+Min:         -51500        Max:         600000        Mean:            21171.64
+ 
+Lead In: R38849.00[Default]
+Default Next Question: R38851.00
+--------------------------------------------------------------------------------
+R38851.00    [CV_HH_POV_RATIO]                              Survey Year: 1999
+  PRIMARY VARIABLE
+
+             RATIO OF HOUSEHOLD INCOME TO POVERTY LEVEL
+ 
+Ratio of household income to poverty level in the previous year.
+ 
+NOTE: /* Topcoded. 2 IMPLIED DECIMAL PLACES */
+ 
+     155           0
+     577           1 TO 99: .01-.99
+     465         100 TO 199: 1.00-1.99
+     315         200 TO 299: 2.00-2.99
+     308         300 TO 399: 3.00-3.99
+     212         400 TO 499: 4.00-4.99
+     111         500 TO 599: 5.00-5.99
+      97         600 TO 699: 6.00-6.99
+      46         700 TO 799: 7.00-7.99
+      32         800 TO 899: 8.00-8.99
+      24         900 TO 999: 9.00-9.99
+      16        1000 TO 1099: 10.00-10.99
+      14        1100 TO 1199: 11.00-11.99
+       9        1200 TO 1299: 12.00-12.99
+       0        1300 TO 1399: 13.00-13.99
+       0        1400 TO 1499: 14.00-14.99
+       0        1500 TO 1599: 15.00-15.99
+       0        1600 TO 1699: 16.00-16.99
+       0        1700 TO 1799: 17.00-17.99
+       0        1800 TO 1899: 18.00-18.99
+       0        1900 TO 1999: 19.00-19.99
+      49        2000 TO 2999: 20.00-29.99
+       0        3000 TO 9999: 30.00+
+  -------
+    2430
+ 
+Refusal(-1)           45
+Don't Know(-2)       576
+Invalid Skip(-3)      53
+TOTAL =========>    3104   VALID SKIP(-4)    5104     NON-INTERVIEW(-5)     776
+ 
+Min:              0        Max:           2009        Mean:              299.66
+ 
+Lead In: R38850.00[Default]
+Default Next Question: R38852.00
+--------------------------------------------------------------------------------
+R38853.00    [CV_HH_SIZE]                                   Survey Year: 1999
+  PRIMARY VARIABLE
+
+             HOUSEHOLD SIZE
+ 
+Household size as of the survey date.
+ 
+       0           0
+     123           1
+     704           2
+    1726           3
+    2453           4
+    1688           5
+     823           6
+     376           7
+     169           8
+      74           9
+      43          10
+      14          11
+       7          12
+       5          13
+       1          14
+       2          15
+       0          16
+       0          17
+       0          18
+       0          19
+       0          20 TO 99: 20+
+  -------
+    8208
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8208   VALID SKIP(-4)       0     NON-INTERVIEW(-5)     776
+ 
+Min:              1        Max:             15        Mean:                 4.3
+ 
+Lead In: R38852.00[Default]
+Default Next Question: R38854.00
+--------------------------------------------------------------------------------
+R38991.00    [CV_URBAN-RURAL]                               Survey Year: 1999
+  PRIMARY VARIABLE
+
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1986       0 Rural
+    5952       1 Urban
+     242       2 Unknown
+  -------
+    8180
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      10
+TOTAL =========>    8190   VALID SKIP(-4)      18     NON-INTERVIEW(-5)     776
+ 
+Min:              0        Max:              2        Mean:                 .79
+ 
+Lead In: R38922.00[Default]
+Default Next Question: R38992.00
+--------------------------------------------------------------------------------
+R42621.04    [YSCH-9600~000005]                             Survey Year: 2000
+  PRIMARY VARIABLE
+
+             SUBJECTS R TOOK ADVANCED PLACEMENT EXAMS: ECONOMICS
+ 
+In which subjects did you take the AP exam?
+ 
+(SELECT ALL THAT APPLY.)
+ 
+UNIVERSE: R with history of formal schooling; attended 11th grade/higher; DLI AP
+test questions not asked; took AP test
+ 
+RESPONSE CHOICE: "Economics (Microeconomics, Macroeconomics)"
+ 
+       1       1 SELECTED
+     106       0 NOT SELECTED
+  -------
+     107
+ 
+Refusal(-1)            0
+Don't Know(-2)         3
+TOTAL =========>     110   VALID SKIP(-4)    7970     NON-INTERVIEW(-5)     904
+ 
+Min:              0        Max:              1        Mean:                 .01
+ 
+Lead In: R42621.03[Default]
+Default Next Question: R42621.05
+--------------------------------------------------------------------------------
+R51286.00    [YAST-4400]                                    Survey Year: 2000
+  PRIMARY VARIABLE
+
+             R HAVE ANY CHECKING, SAVINGS, OR MONEY MARKET ACCOUNTS?
+ 
+Excluding retirement savings, do [you/you or your spouse/partner] have any 
+checking accounts, savings accounts or money market accounts or funds, including
+any such accounts held in investment trusts?
+ 
+UNIVERSE: R is independent
+ 
+    1961       1 YES, RESPONDENT HAS OWN ACCOUNT   (Go To R51287.00)
+      52       2 YES, RESPONDENT HAS OWN ACCOUNTS AND ACCOUNTS JOINTLY WITH 
+                      SPOUSE/PARTNER   (Go To R51287.00)
+      50       3 YES, RESPONDENT ONLY HAS ACCOUNTS JOINTLY WITH SPOUSE/PARTNER  
+                      (Go To R51287.00)
+      37       4 YES, SPOUSE/PARTNER HAS ACCOUNTS SEPARATELY FROM RESPONDENT
+    2052       0 NO
+  -------
+    4152
+ 
+Refusal(-1)            7
+Don't Know(-2)         4
+TOTAL =========>    4163   VALID SKIP(-4)    3917     NON-INTERVIEW(-5)     904
+ 
+Min:              0        Max:              4        Mean:                 .57
+ 
+Lead In: R51277.00[Default] R51281.00[Default] R51282.00[Default] 
+         R51284.00[Default] R51285.00[Default]
+Default Next Question: R51298.00
+--------------------------------------------------------------------------------
+R51287.00    [YAST-4420]                                    Survey Year: 2000
+  PRIMARY VARIABLE
+
+             TOTAL MARKET VALUE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+What is the (total) current balance in all of the checking, savings and money 
+market accounts [you have/you have on your own and you have jointly with your 
+spouse or partner/you have jointly with your spouse or partner]?  (Average 
+balance over the past month)
+ 
+INTERVIEWER: IF RESPONDENT IS UNABLE TO GIVE AN EXACT AMOUNT, PROBE FOR A RANGE.
+ 
+UNIVERSE: R is independent; R or S/P have checking/savings/money market 
+accounts/funds
+ 
+    1958       1 SELECT TO ENTER AMOUNT   (Go To R51288.00)
+      60       2 SELECT TO ENTER RANGE
+  -------
+    2018
+ 
+Refusal(-1)           20
+Don't Know(-2)        25
+TOTAL =========>    2063   VALID SKIP(-4)    6017     NON-INTERVIEW(-5)     904
+ 
+Min:              1        Max:              2        Mean:                1.03
+ 
+Lead In: R51286.00[1:3]
+Default Next Question: R51289.00
+--------------------------------------------------------------------------------
+R51289.00    [YAST-4426]                                    Survey Year: 2000
+  PRIMARY VARIABLE
+
+             ESTIMATED BALANCE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+(HAND R SHOWCARD GG)
+ 
+Please look at this card. Can you tell me the letter of the category that is 
+your best estimate of that amount?
+ 
+UNIVERSE: R is independent; R or S/P have checking/savings/money market 
+accounts/funds; DK/RF to report total market value of these accounts/funds
+ 
+      96       1 A. $1              -        $1,000
+      15       2 B.  $1,001      -       $2,500
+       5       3 C.  $2,501      -       $5,000
+       6       4 D.  $5,001      -     $10,000
+       2       5 E.   $10,001    -     $25,000
+       0       6 F.   $25,001    -     $50,000
+       0       7 G.   More than   $50,000
+  -------
+     124
+ 
+Refusal(-1)           34
+Don't Know(-2)        22
+TOTAL =========>     180   VALID SKIP(-4)    7900     NON-INTERVIEW(-5)     904
+ 
+Min:              1        Max:              5        Mean:                1.41
+ 
+Lead In: R51287.00[Default]  R51288.00[-2:-1]
+Default Next Question: R51290.00
+--------------------------------------------------------------------------------
+R54594.00    [CV_CENSUS_REGION]                             Survey Year: 2000
+  PRIMARY VARIABLE
+
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1391       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1772       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3074       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1808       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    8045
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      21
+TOTAL =========>    8066   VALID SKIP(-4)      14     NON-INTERVIEW(-5)     904
+ 
+Min:              1        Max:              4        Mean:                2.66
+ 
+Lead In: R54592.00[Default]
+Default Next Question: R54595.00
+--------------------------------------------------------------------------------
+R54640.01    [CV_HGC_0001]                                  Survey Year: 2000
+  PRIMARY VARIABLE
+
+             RS HIGHEST GRADE COMPLETED PRIOR TO THE 00/01 ACAD YEAR
+ 
+The highest elementary or secondary grade completed prior to the start of the 
+2000/2001 academic school year.
+ 
+       1       0 NONE
+       0       1 1ST GRADE
+       1       2 2ND GRADE
+       0       3 3RD GRADE
+       0       4 4TH GRADE
+       2       5 5TH GRADE
+      21       6 6TH GRADE
+      50       7 7TH GRADE
+     375       8 8TH GRADE
+    1041       9 9TH GRADE
+    1853      10 10TH GRADE
+    1669      11 11TH GRADE
+    2956      12 12TH GRADE
+       3      95 UNGRADED
+  -------
+    7972
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     108
+TOTAL =========>    8080   VALID SKIP(-4)       0     NON-INTERVIEW(-5)     904
+ 
+Min:              0        Max:             95        Mean:               10.73
+ 
+Lead In: R54640.00[Default]
+Default Next Question: R54641.00
+--------------------------------------------------------------------------------
+R54641.00    [CV_INCOME_GROSS_YR]                           Survey Year: 2000
+  PRIMARY VARIABLE
+
+             GROSS HH INCOME IN PAST YEAR
+ 
+Gross household income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     176           0
+      59           1 TO 1000
+      46        1001 TO 2000
+     111        2001 TO 3000
+     103        3001 TO 5000
+     305        5001 TO 10000
+     414       10001 TO 20000
+     355       20001 TO 30000
+     367       30001 TO 40000
+     251       40001 TO 50000
+     324       50001 TO 65000
+     311       65001 TO 80000
+     276       80001 TO 100000
+     244      100001 TO 150000
+      70      150001 TO 200000
+      89      200001 TO 999999: 200001+
+  -------
+    3501
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1083
+TOTAL =========>    4584   VALID SKIP(-4)    3496     NON-INTERVIEW(-5)     904
+ 
+Min:              0        Max:         270543        Mean:            49837.77
+ 
+Lead In: R54640.01[Default]
+Default Next Question: R54642.00
+--------------------------------------------------------------------------------
+R54642.00    [CV_HH_NET_WORTH_Y]                            Survey Year: 2000
+  PRIMARY VARIABLE
+
+             NET WORTH OF HOUSEHOLD ACCORDING TO R
+ 
+Household net worth.
+ 
+COMMENT: from youth interview
+ 
+NOTE: /*Topcoded at predetermined values.  Respondents with household net worth 
+values above $600,000 were topcoded to a value of $600,000.  Negative values of 
+-1, -2, -3, -4, or -5 do not reflect negative monetary amounts; these numbers 
+represent standard NLSY97 codes.*/
+ 
+      36     -999999 TO -3000: < -2999
+       9       -2999 TO -2000
+      17       -1999 TO -1000
+      22        -999 TO -1
+       5           0
+      27           1 TO 1000
+      70        1001 TO 2000
+    1106        2001 TO 3000
+     410        3001 TO 5000
+     758        5001 TO 10000
+     556       10001 TO 20000
+     162       20001 TO 30000
+     168       30001 TO 40000
+      58       40001 TO 50000
+      27       50001 TO 65000
+     110       65001 TO 80000
+      34       80001 TO 100000
+      17      100001 TO 150000
+      86      150001 TO 200000
+      60      200001 TO 999999999: 200001+
+  -------
+    3738
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     425
+TOTAL =========>    4163   VALID SKIP(-4)    3917     NON-INTERVIEW(-5)     904
+ 
+Min:         -78100        Max:         509525        Mean:            20583.69
+ 
+Lead In: R54641.00[Default]
+Default Next Question: R54643.00
+--------------------------------------------------------------------------------
+R54643.00    [CV_HH_POV_RATIO]                              Survey Year: 2000
+  PRIMARY VARIABLE
+
+             RATIO OF HOUSEHOLD INCOME TO POVERTY LEVEL
+ 
+Ratio of household income to poverty level in the previous year.
+ 
+NOTE: /* Topcoded. 2 IMPLIED DECIMAL PLACES */
+ 
+     175           0
+     795           1 TO 99: .01-.99
+     652         100 TO 199: 1.00-1.99
+     500         200 TO 299: 2.00-2.99
+     414         300 TO 399: 3.00-3.99
+     314         400 TO 499: 4.00-4.99
+     199         500 TO 599: 5.00-5.99
+     153         600 TO 699: 6.00-6.99
+      70         700 TO 799: 7.00-7.99
+      48         800 TO 899: 8.00-8.99
+      24         900 TO 999: 9.00-9.99
+      21        1000 TO 1099: 10.00-10.99
+      11        1100 TO 1199: 11.00-11.99
+       0        1200 TO 1299: 12.00-12.99
+       0        1300 TO 1399: 13.00-13.99
+       0        1400 TO 1499: 14.00-14.99
+       0        1500 TO 1599: 15.00-15.99
+      88        1600 TO 1699: 16.00-16.99
+       0        1700 TO 1799: 17.00-17.99
+       0        1800 TO 1899: 18.00-18.99
+       0        1900 TO 1999: 19.00-19.99
+       0        2000 TO 2999: 20.00-29.99
+       0        3000 TO 9999: 30.00+
+  -------
+    3464
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1119
+TOTAL =========>    4583   VALID SKIP(-4)    3497     NON-INTERVIEW(-5)     904
+ 
+Min:              0        Max:           1689        Mean:              302.81
+ 
+Lead In: R54642.00[Default]
+Default Next Question: R54644.00
+--------------------------------------------------------------------------------
+R54645.00    [CV_HH_SIZE]                                   Survey Year: 2000
+  PRIMARY VARIABLE
+
+             HOUSEHOLD SIZE
+ 
+Household size as of the survey date.
+ 
+       0           0
+     249           1
+     897           2
+    1873           3
+    2224           4
+    1440           5
+     774           6
+     340           7
+     147           8
+      79           9
+      37          10
+      12          11
+       4          12
+       3          13
+       0          14
+       1          15
+       0          16
+       0          17
+       0          18
+       0          19
+       0          20 TO 99: 20+
+  -------
+    8080
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8080   VALID SKIP(-4)       0     NON-INTERVIEW(-5)     904
+ 
+Min:              1        Max:             15        Mean:                4.12
+ 
+Lead In: R54644.00[Default]
+Default Next Question: R54646.00
+--------------------------------------------------------------------------------
+R54841.00    [CV_URBAN-RURAL]                               Survey Year: 2000
+  PRIMARY VARIABLE
+
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1891       0 Rural
+    5841       1 Urban
+     304       2 Unknown
+  -------
+    8036
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      30
+TOTAL =========>    8066   VALID SKIP(-4)      14     NON-INTERVIEW(-5)     904
+ 
+Min:              0        Max:              2        Mean:                  .8
+ 
+Lead In: R54742.00[Default]
+Default Next Question: R54844.00
+--------------------------------------------------------------------------------
+R59198.04    [YSCH-9600~000005]                             Survey Year: 2001
+  PRIMARY VARIABLE
+
+             SUBJECTS R TOOK ADVANCED PLACEMENT EXAMS: ECONOMICS
+ 
+In which subjects did you take the AP exam?
+ 
+(SELECT ALL THAT APPLY.)
+ 
+UNIVERSE: R with history of formal schooling; attended 11th grade/higher; DLI AP
+test questions not asked; took AP test
+ 
+RESPONSE CHOICE: "Economics (Microeconomics, Macroeconomics)"
+ 
+       1       1 SELECTED
+      46       0 NOT SELECTED
+  -------
+      47
+ 
+Refusal(-1)            0
+Don't Know(-2)         1
+TOTAL =========>      48   VALID SKIP(-4)    7834     NON-INTERVIEW(-5)    1102
+ 
+Min:              0        Max:              1        Mean:                 .02
+ 
+Lead In: R59198.03[Default]
+Default Next Question: R59198.05
+--------------------------------------------------------------------------------
+R68584.00    [YAST-4400]                                    Survey Year: 2001
+  PRIMARY VARIABLE
+
+             R HAVE ANY CHECKING, SAVINGS, OR MONEY MARKET ACCOUNTS?
+ 
+Excluding retirement savings, do [you/you or your spouse/partner] have any 
+checking accounts, savings accounts or money market accounts or funds, including
+any such accounts held in investment trusts?
+ 
+UNIVERSE: R is independent
+ 
+    1961       1 YES, RESPONDENT HAS OWN ACCOUNT   (Go To R68585.00)
+      52       2 YES, RESPONDENT HAS OWN ACCOUNTS AND ACCOUNTS JOINTLY WITH 
+                      SPOUSE/PARTNER   (Go To R68585.00)
+      52       3 YES, RESPONDENT ONLY HAS ACCOUNTS JOINTLY WITH SPOUSE/PARTNER  
+                      (Go To R68585.00)
+      49       4 YES, SPOUSE/PARTNER HAS ACCOUNTS SEPARATELY FROM RESPONDENT
+    1842       0 NO
+  -------
+    3956
+ 
+Refusal(-1)            9
+Don't Know(-2)         1
+TOTAL =========>    3966   VALID SKIP(-4)    3916     NON-INTERVIEW(-5)    1102
+ 
+Min:              0        Max:              4        Mean:                 .61
+ 
+Lead In: R68575.00[Default] R68579.00[Default] R68580.00[Default] 
+         R68582.00[Default] R68583.00[Default]
+Default Next Question: R68596.00
+--------------------------------------------------------------------------------
+R68585.00    [YAST-4420]                                    Survey Year: 2001
+  PRIMARY VARIABLE
+
+             TOTAL MARKET VALUE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+What is the (total) current balance in all of the checking, savings and money 
+market accounts [you have/you have on your own and you have jointly with your 
+spouse or partner/you have jointly with your spouse or partner]?  (Average 
+balance over the past month)
+ 
+INTERVIEWER: IF RESPONDENT IS UNABLE TO GIVE AN EXACT AMOUNT, PROBE FOR A RANGE.
+ 
+UNIVERSE: R is independent; R or S/P have checking/savings/money market 
+accounts/funds
+ 
+    1982       1 SELECT TO ENTER AMOUNT   (Go To R68586.00)
+      57       2 SELECT TO ENTER RANGE   (Go To R68588.00)
+  -------
+    2039
+ 
+Refusal(-1)            7
+Don't Know(-2)        19
+TOTAL =========>    2065   VALID SKIP(-4)    5817     NON-INTERVIEW(-5)    1102
+ 
+Min:              1        Max:              2        Mean:                1.03
+ 
+Lead In: R68584.00[1:3]
+Default Next Question: R68587.00
+--------------------------------------------------------------------------------
+R68587.00    [YAST-4426]                                    Survey Year: 2001
+  PRIMARY VARIABLE
+
+             ESTIMATED BALANCE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+(HAND R SHOWCARD GG)
+ 
+Please look at this card. Can you tell me the letter of the category that is 
+your best estimate of that amount?
+ 
+UNIVERSE: R is independent; R or S/P have checking/savings/money market 
+accounts/funds; DK/RF to report total market value of these accounts/funds
+ 
+      47       1 A. $1              -        $1,000
+      12       2 B.  $1,001      -       $2,500
+       7       3 C.  $2,501      -       $5,000
+       3       4 D.  $5,001      -     $10,000
+       1       5 E.   $10,001    -     $25,000
+       0       6 F.   $25,001    -     $50,000
+       1       7 G.   More than   $50,000
+  -------
+      71
+ 
+Refusal(-1)            7
+Don't Know(-2)        16
+TOTAL =========>      94   VALID SKIP(-4)    7788     NON-INTERVIEW(-5)    1102
+ 
+Min:              1        Max:              7        Mean:                1.63
+ 
+Lead In: R68585.00[Default]  R68586.00[-2:-1]
+Default Next Question: R68588.00
+--------------------------------------------------------------------------------
+R72224.00    [CV_CENSUS_REGION]                             Survey Year: 2001
+  PRIMARY VARIABLE
+
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1336       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1734       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3004       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1770       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7844
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      21
+TOTAL =========>    7865   VALID SKIP(-4)      17     NON-INTERVIEW(-5)    1102
+ 
+Min:              1        Max:              4        Mean:                2.66
+ 
+Lead In: R72221.00[Default]
+Default Next Question: R72225.00
+--------------------------------------------------------------------------------
+R72277.01    [CV_HGC_0102]                                  Survey Year: 2001
+  PRIMARY VARIABLE
+
+             RS HIGHEST GRADE COMPLETED PRIOR TO THE 01/02 ACAD YEAR
+ 
+The highest elementary or secondary grade completed prior to the start of the 
+2001/2002 academic school year.
+ 
+       1       0 NONE
+       0       1 1ST GRADE
+       1       2 2ND GRADE
+       0       3 3RD GRADE
+       0       4 4TH GRADE
+       1       5 5TH GRADE
+      18       6 6TH GRADE
+      40       7 7TH GRADE
+     277       8 8TH GRADE
+     494       9 9TH GRADE
+    1036      10 10TH GRADE
+    1791      11 11TH GRADE
+    4111      12 12TH GRADE
+       3      95 UNGRADED
+  -------
+    7773
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     109
+TOTAL =========>    7882   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1102
+ 
+Min:              0        Max:             95        Mean:               11.16
+ 
+Lead In: R72277.00[Default]
+Default Next Question: R72278.00
+--------------------------------------------------------------------------------
+R72278.00    [CV_INCOME_GROSS_YR]                           Survey Year: 2001
+  PRIMARY VARIABLE
+
+             GROSS HH INCOME IN PAST YEAR
+ 
+Gross household income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     229           0
+      74           1 TO 1000
+      60        1001 TO 2000
+     118        2001 TO 3000
+     129        3001 TO 5000
+     331        5001 TO 10000
+     628       10001 TO 20000
+     495       20001 TO 30000
+     450       30001 TO 40000
+     396       40001 TO 50000
+     482       50001 TO 65000
+     445       65001 TO 80000
+     378       80001 TO 100000
+     402      100001 TO 150000
+      98      150001 TO 200000
+     129      200001 TO 999999: 200001+
+  -------
+    4844
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1049
+TOTAL =========>    5893   VALID SKIP(-4)    1989     NON-INTERVIEW(-5)    1102
+ 
+Min:              0        Max:         285805        Mean:            52665.29
+ 
+Lead In: R72277.01[Default]
+Default Next Question: R72279.00
+--------------------------------------------------------------------------------
+R72279.00    [CV_HH_NET_WORTH_Y]                            Survey Year: 2001
+  PRIMARY VARIABLE
+
+             NET WORTH OF HOUSEHOLD ACCORDING TO R
+ 
+Household net worth.
+ 
+COMMENT: from youth interview
+ 
+NOTE: /*Topcoded at predetermined values.  Respondents with household net worth 
+values above $600,000 were topcoded to a value of $600,000.  Negative values of 
+-1, -2, -3, -4, or -5 do not reflect negative monetary amounts; these numbers 
+represent standard NLSY97 codes.*/
+ 
+      56     -999999 TO -3000: < -2999
+      15       -2999 TO -2000
+      16       -1999 TO -1000
+      17        -999 TO -1
+       7           0
+      27           1 TO 1000
+      61        1001 TO 2000
+     885        2001 TO 3000
+     383        3001 TO 5000
+     797        5001 TO 10000
+     611       10001 TO 20000
+     145       20001 TO 30000
+     219       30001 TO 40000
+      77       40001 TO 50000
+      21       50001 TO 65000
+     122       65001 TO 80000
+      43       80001 TO 100000
+      16      100001 TO 150000
+      83      150001 TO 200000
+      66      200001 TO 999999999: 200001+
+  -------
+    3667
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     299
+TOTAL =========>    3966   VALID SKIP(-4)    3916     NON-INTERVIEW(-5)    1102
+ 
+Min:         -97500        Max:         600000        Mean:            22971.64
+ 
+Lead In: R72278.00[Default]
+Default Next Question: R72280.00
+--------------------------------------------------------------------------------
+R72280.00    [CV_HH_POV_RATIO]                              Survey Year: 2001
+  PRIMARY VARIABLE
+
+             RATIO OF HOUSEHOLD INCOME TO POVERTY LEVEL
+ 
+Ratio of household income to poverty level in the previous year.
+ 
+NOTE: /* Topcoded. 2 IMPLIED DECIMAL PLACES */
+ 
+     235           0
+     980           1 TO 99: .01-.99
+     941         100 TO 199: 1.00-1.99
+     760         200 TO 299: 2.00-2.99
+     619         300 TO 399: 3.00-3.99
+     418         400 TO 499: 4.00-4.99
+     299         500 TO 599: 5.00-5.99
+     195         600 TO 699: 6.00-6.99
+     108         700 TO 799: 7.00-7.99
+      92         800 TO 899: 8.00-8.99
+      34         900 TO 999: 9.00-9.99
+      22        1000 TO 1099: 10.00-10.99
+      12        1100 TO 1199: 11.00-11.99
+       0        1200 TO 1299: 12.00-12.99
+       0        1300 TO 1399: 13.00-13.99
+       0        1400 TO 1499: 14.00-14.99
+       0        1500 TO 1599: 15.00-15.99
+       0        1600 TO 1699: 16.00-16.99
+     129        1700 TO 1799: 17.00-17.99
+       0        1800 TO 1899: 18.00-18.99
+       0        1900 TO 1999: 19.00-19.99
+       0        2000 TO 2999: 20.00-29.99
+       0        3000 TO 9999: 30.00+
+  -------
+    4844
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1049
+TOTAL =========>    5893   VALID SKIP(-4)    1989     NON-INTERVIEW(-5)    1102
+ 
+Min:              0        Max:           1720        Mean:              312.61
+ 
+Lead In: R72279.00[Default]
+Default Next Question: R72281.00
+--------------------------------------------------------------------------------
+R72282.00    [CV_HH_SIZE]                                   Survey Year: 2001
+  PRIMARY VARIABLE
+
+             HOUSEHOLD SIZE
+ 
+Household size as of the survey date.
+ 
+       0           0
+     317           1
+    1067           2
+    1843           3
+    2059           4
+    1316           5
+     686           6
+     298           7
+     148           8
+      79           9
+      42          10
+      15          11
+       3          12
+       3          13
+       0          14
+       3          15
+       0          16
+       1          17
+       0          18
+       0          19
+       0          20 TO 99: 20+
+  -------
+    7880
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       2
+TOTAL =========>    7882   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1102
+ 
+Min:              1        Max:             17        Mean:                4.01
+ 
+Lead In: R72281.00[Default]
+Default Next Question: R72283.00
+--------------------------------------------------------------------------------
+R72484.00    [CV_URBAN-RURAL]                               Survey Year: 2001
+  PRIMARY VARIABLE
+
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1702       0 Rural
+    5842       1 Urban
+     277       2 Unknown
+  -------
+    7821
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      44
+TOTAL =========>    7865   VALID SKIP(-4)      17     NON-INTERVIEW(-5)    1102
+ 
+Min:              0        Max:              2        Mean:                 .82
+ 
+Lead In: R72379.00[Default]
+Default Next Question: R72487.00
+--------------------------------------------------------------------------------
+R97053.00    [ASVAB_AR_ABILITY_EST_POS]                     Survey Year: XRND
+  PRIMARY VARIABLE
+
+             FINAL POSITIVE ABILITY ESTIMATE FOR AR CAT-ASVAB SUBTEST
+ 
+The Positive Final Ability Estimate for Arithmetic Reasoning CAT-ASVAB subtest.
+ 
+COMMENT: ASVAB Test
+ 
+NOTE: Please see appendix 10 in the codebook supplement for more information on 
+the ASVAB.
+NOTE:  3 IMPLIED DECIMAL PLACES
+ 
+    1319           0 TO 500
+     582         501 TO 1000
+     392        1001 TO 1500
+      75        1501 TO 2000
+      14        2001 TO 2500
+       0        2501 TO 3000
+       0        3001 TO 3500
+  -------
+    2382
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      14
+TOTAL =========>    2396   VALID SKIP(-4)    6588     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:           2365        Mean:              556.05
+ 
+Lead In: R97052.00[Default]
+Default Next Question: R97054.00
+--------------------------------------------------------------------------------
+R97060.00    [ASVAB_MK_ABILITY_EST_POS]                     Survey Year: XRND
+  PRIMARY VARIABLE
+
+             FINAL POSITIVE ABILITY ESTIMATE FOR MK CAT-ASVAB SUBTEST
+ 
+The Positive Final Ability Estimate for Mathematics Knowledge CAT-ASVAB subtest.
+ 
+COMMENT: ASVAB Test
+ 
+NOTE: Please see appendix 10 in the codebook supplement for more information on 
+the ASVAB.
+NOTE:  3 IMPLIED DECIMAL PLACES
+ 
+    1301           0 TO 500
+     950         501 TO 1000
+     606        1001 TO 1500
+     279        1501 TO 2000
+      61        2001 TO 2500
+      12        2501 TO 3000
+       0        3001 TO 3500
+  -------
+    3209
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      34
+TOTAL =========>    3243   VALID SKIP(-4)    5741     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:           2678        Mean:              748.35
+ 
+Lead In: R97059.00[Default]
+Default Next Question: R97061.00
+--------------------------------------------------------------------------------
+R98296.00    [ASVAB_MATH_VERBAL_SCORE_PCT]                  Survey Year: XRND
+  PRIMARY VARIABLE
+
+             ASVAB MATH_VERBAL SCORE PERCENT
+ 
+To calculate the ASVAB_MATH_VERBAL_SCORE_PCT, NLS Program staff first grouped 
+respondents into three-month age groups.  That is, the oldest cohort included 
+those born from January through March of 1980, while the youngest were born from
+October through December 1984 (a total of 20 cohorts, with an average of about 
+350 respondents per cohort).  Custom sampling weights (computed for the sample 
+of 7,093 respondents who have scores on all four exams) were assigned for each 
+respondent's scores.  Within each three-month age group and using the sampling 
+weights, we assigned percentiles for the theta scores for the tests on 
+Mathematical Knowledge (MK), Arithmetic Reasoning (AR), Word Knowledge (WK), and
+Paragraph Comprehension (PC) based on the weighted number of respondents scoring
+below each score.  We added the percentile scores for WK and PC to get an 
+aggregate Verbal score (V) for which an aggregated intra-group, internally 
+normed, percentile was then computed.  NLS Program staff then added the 
+percentile scores for MK, AR and two times the aggregated percentile for V.  
+Finally, within each group we computed a percentile score, using the weights, on
+this aggregate score, yielding a final value between zero and 99.
+ 
+COMMENT: USERS SHOULD NOTE THAT, ALTHOUGH THE FORMULA IS SIMILAR TO THE AFQT 
+SCORE GENERATED BY THE DEPARTMENT OF DEFENSE FOR THE NLSY79 COHORT, THIS 
+VARIABLE REFLECTS WORK DONE BY NLS PROGRAM STAFF AND IS NEITHER GENERATED NOR 
+ENDORSED BY DOD.  FOR MORE DETAILS, USERS SHOULD READ THE NLSY97 USER'S GUIDE 
+SECTION ON THE ADMINISTRATION OF THE CAT-ASVAB, ASVAB_MATH_VERBAL SCORE_PCT.
+ 
+NOTE: Please see appendix 10 in the codebook supplement for more information on 
+the ASVAB.
+NOTE:  3 IMPLIED DECIMAL PLACES
+ 
+      20           0
+      85           1 TO 999: .001-.999
+    1728        1000 TO 19999: 1.000-19.999
+    1509       20000 TO 39999: 20.000-39.999
+    1332       40000 TO 59999: 40.000-59.999
+    1247       60000 TO 79999: 60.000-79.999
+    1172       80000 TO 100000: 80.000-100.000
+  -------
+    7093
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7093   VALID SKIP(-4)    1891     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:         100000        Mean:            45317.19
+ 
+Lead In: R97127.00[Default]
+Default Next Question: R97128.00
+--------------------------------------------------------------------------------
+R98315.00    [TRANS_AP_ECON]                                Survey Year: HSTR
+  PRIMARY VARIABLE
+
+             AP ECONOMICS SCORE
+ 
+Highest test score on an Advanced Placement economics exam. This Advance 
+Placement variable is available for Wave 2 students only; students taking this 
+exam in Wave 1 would have their score reported in the OTH_AP variable series. 
+Please see Appendix 11 of the Codebook Supplement for more information on the 
+collection and coding of transcript data.
+ 
+COMMENT: Transcript Survey
+ 
+       4           1
+       4           2
+       0           3
+       4           4
+       1           5
+  -------
+      13
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>      13   VALID SKIP(-4)    8971     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              5        Mean:                2.54
+ 
+Lead In: R98314.00[Default]
+Default Next Question: R97944.00
+--------------------------------------------------------------------------------
+S02941.04    [YSCH-9600~000005]                             Survey Year: 2002
+  PRIMARY VARIABLE
+
+             SUBJECTS R TOOK ADVANCED PLACEMENT EXAMS: ECONOMICS
+ 
+In which subjects did you take the AP exam?
+ 
+(SELECT ALL THAT APPLY.)
+ 
+UNIVERSE: R with history of formal schooling; attended 11th grade/higher; DLI AP
+test questions not asked; took AP test
+ 
+RESPONSE CHOICE: "Economics (Microeconomics, Macroeconomics)"
+ 
+       1       1 SELECTED
+      22       0 NOT SELECTED
+  -------
+      23
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>      23   VALID SKIP(-4)    7873     NON-INTERVIEW(-5)    1088
+ 
+Min:              0        Max:              1        Mean:                 .04
+ 
+Lead In: S02941.03[Default]
+Default Next Question: S02941.05
+--------------------------------------------------------------------------------
+S10926.00    [YAST-4400]                                    Survey Year: 2002
+  PRIMARY VARIABLE
+
+             R HAVE ANY CHECKING, SAVINGS, OR MONEY MARKET ACCOUNTS?
+ 
+Excluding retirement savings, do [you/you or your spouse/partner] have any 
+checking accounts, savings accounts or money market accounts or funds, including
+any such accounts held in investment trusts?
+ 
+UNIVERSE: R is independent
+ 
+    2062       1 YES, RESPONDENT HAS OWN ACCOUNT   (Go To S10927.00)
+      49       2 YES, RESPONDENT HAS OWN ACCOUNTS AND ACCOUNTS JOINTLY WITH 
+                      SPOUSE/PARTNER   (Go To S10927.00)
+      43       3 YES, RESPONDENT ONLY HAS ACCOUNTS JOINTLY WITH SPOUSE/PARTNER  
+                      (Go To S10927.00)
+      50       4 YES, SPOUSE/PARTNER HAS ACCOUNTS SEPARATELY FROM RESPONDENT
+    1733       0 NO
+  -------
+    3937
+ 
+Refusal(-1)            5
+Don't Know(-2)         2
+TOTAL =========>    3944   VALID SKIP(-4)    3952     NON-INTERVIEW(-5)    1088
+ 
+Min:              0        Max:              4        Mean:                 .63
+ 
+Lead In: S10913.00[Default] S10919.00[Default] S10920.00[Default] 
+         S10922.00[Default] S10924.00[Default] S10925.00[Default]
+Default Next Question: S10944.00
+--------------------------------------------------------------------------------
+S10927.00    [YAST-4420]                                    Survey Year: 2002
+  PRIMARY VARIABLE
+
+             TOTAL MARKET VALUE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+What is the (total) current balance in all of the checking, savings and money 
+market accounts [you have/you have on your own and you have jointly with your 
+spouse or partner/you have jointly with your spouse or partner]? (Average 
+balance over the past month)
+ 
+INTERVIEWER: IF RESPONDENT IS UNABLE TO GIVE AN EXACT AMOUNT, PROBE FOR A RANGE.
+ 
+UNIVERSE: R is independent; R or S/P have checking/savings/money market 
+accounts/funds
+ 
+    2072       1 SELECT TO ENTER AMOUNT   (Go To S10928.00)
+      37       2 SELECT TO ENTER RANGE   (Go To S10929.00)
+  -------
+    2109
+ 
+Refusal(-1)           15
+Don't Know(-2)        30
+TOTAL =========>    2154   VALID SKIP(-4)    5742     NON-INTERVIEW(-5)    1088
+ 
+Min:              1        Max:              2        Mean:                1.02
+ 
+Lead In: S10926.00[1:3]
+Default Next Question: S10931.00
+--------------------------------------------------------------------------------
+S10931.00    [YAST-4426]                                    Survey Year: 2002
+  PRIMARY VARIABLE
+
+             ESTIMATED BALANCE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+(HAND R SHOWCARD GG)
+ 
+Please look at this card. Can you tell me the letter of the category that is 
+your best estimate of that amount?
+ 
+UNIVERSE: R is independent; R or S/P have checking/savings/money market 
+accounts/funds; DK/RF to report total market value of these accounts/funds
+ 
+      85       1 A. $1              -        $1,000
+      23       2 B.  $1,001      -       $2,500
+      12       3 C.  $2,501      -       $5,000
+       6       4 D.  $5,001      -     $10,000
+       1       5 E.   $10,001    -     $25,000
+       2       6 F.   $25,001    -     $50,000
+       1       7 G.   More than   $50,000
+  -------
+     130
+ 
+Refusal(-1)           24
+Don't Know(-2)        22
+TOTAL =========>     176   VALID SKIP(-4)    7720     NON-INTERVIEW(-5)    1088
+ 
+Min:              1        Max:              7        Mean:                1.65
+ 
+Lead In: S10927.00[Default]  S10928.00[-2:-1]
+Default Next Question: S10932.00
+--------------------------------------------------------------------------------
+S15355.00    [CV_CENSUS_REGION]                             Survey Year: 2002
+  PRIMARY VARIABLE
+
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1333       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1741       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3032       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1736       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7842
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      27
+TOTAL =========>    7869   VALID SKIP(-4)      27     NON-INTERVIEW(-5)    1088
+ 
+Min:              1        Max:              4        Mean:                2.66
+ 
+Lead In: S15354.00[Default]
+Default Next Question: S15356.00
+--------------------------------------------------------------------------------
+S15416.01    [CV_HGC_0203]                                  Survey Year: 2002
+  PRIMARY VARIABLE
+
+             RS HIGHEST GRADE COMPLETED PRIOR TO THE 02/03 ACAD YEAR
+ 
+The highest elementary or secondary grade completed prior to the start of the 
+2002/2003 academic school year.
+ 
+       0       0 NONE
+       0       1 1ST GRADE
+       0       2 2ND GRADE
+       0       3 3RD GRADE
+       0       4 4TH GRADE
+       1       5 5TH GRADE
+      20       6 6TH GRADE
+      36       7 7TH GRADE
+     269       8 8TH GRADE
+     429       9 9TH GRADE
+     597      10 10TH GRADE
+    1102      11 11TH GRADE
+    5358      12 12TH GRADE
+       3      95 UNGRADED
+  -------
+    7815
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      81
+TOTAL =========>    7896   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1088
+ 
+Min:              5        Max:             95        Mean:                11.4
+ 
+Lead In: S15416.00[Default]
+Default Next Question: S15417.00
+--------------------------------------------------------------------------------
+S15417.00    [CV_INCOME_GROSS_YR]                           Survey Year: 2002
+  PRIMARY VARIABLE
+
+             GROSS HH INCOME IN PAST YEAR
+ 
+Gross household income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     245           0
+      62           1 TO 1000
+      56        1001 TO 2000
+     180        2001 TO 3000
+     152        3001 TO 5000
+     450        5001 TO 10000
+     772       10001 TO 20000
+     580       20001 TO 30000
+     620       30001 TO 40000
+     450       40001 TO 50000
+     553       50001 TO 65000
+     507       65001 TO 80000
+     513       80001 TO 100000
+     544      100001 TO 150000
+     110      150001 TO 200000
+     160      200001 TO 999999: 200001+
+  -------
+    5954
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1274
+TOTAL =========>    7228   VALID SKIP(-4)     668     NON-INTERVIEW(-5)    1088
+ 
+Min:              0        Max:         267940        Mean:            52920.61
+ 
+Lead In: S15416.01[Default]
+Default Next Question: S15418.00
+--------------------------------------------------------------------------------
+S15418.00    [CV_HH_NET_WORTH_Y]                            Survey Year: 2002
+  PRIMARY VARIABLE
+
+             NET WORTH OF HOUSEHOLD ACCORDING TO R
+ 
+Household net worth.
+ 
+COMMENT: from youth interview
+ 
+NOTE: /*Topcoded at predetermined values.  Respondents with household net worth 
+values above $600,000 were topcoded to a value of $600,000.  Negative values of 
+-1, -2, -3, -4, or -5 do not reflect negative monetary amounts; these numbers 
+represent standard NLSY97 codes.*/
+ 
+      58     -999999 TO -3000: < -2999
+      14       -2999 TO -2000
+      21       -1999 TO -1000
+      20        -999 TO -1
+       5           0
+      36           1 TO 1000
+      90        1001 TO 2000
+    1320        2001 TO 3000
+     525        3001 TO 5000
+     758        5001 TO 10000
+     472       10001 TO 20000
+     131       20001 TO 30000
+      73       30001 TO 40000
+      29       40001 TO 50000
+      25       50001 TO 65000
+      44       65001 TO 80000
+      10       80001 TO 100000
+      11      100001 TO 150000
+      20      150001 TO 200000
+      25      200001 TO 999999999: 200001+
+  -------
+    3687
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     257
+TOTAL =========>    3944   VALID SKIP(-4)    3952     NON-INTERVIEW(-5)    1088
+ 
+Min:        -197500        Max:         600000        Mean:            11377.79
+ 
+Lead In: S15417.00[Default]
+Default Next Question: S15419.00
+--------------------------------------------------------------------------------
+S15419.00    [CV_HH_POV_RATIO]                              Survey Year: 2002
+  PRIMARY VARIABLE
+
+             RATIO OF HOUSEHOLD INCOME TO POVERTY LEVEL
+ 
+Ratio of household income to poverty level in the previous year.
+ 
+NOTE: /* Topcoded. 2 IMPLIED DECIMAL PLACES */
+ 
+     251           0
+    1256           1 TO 99: .01-.99
+    1112         100 TO 199: 1.00-1.99
+     938         200 TO 299: 2.00-2.99
+     752         300 TO 399: 3.00-3.99
+     524         400 TO 499: 4.00-4.99
+     400         500 TO 599: 5.00-5.99
+     234         600 TO 699: 6.00-6.99
+     144         700 TO 799: 7.00-7.99
+     112         800 TO 899: 8.00-8.99
+      52         900 TO 999: 9.00-9.99
+      17        1000 TO 1099: 10.00-10.99
+       0        1100 TO 1199: 11.00-11.99
+       0        1200 TO 1299: 12.00-12.99
+       0        1300 TO 1399: 13.00-13.99
+       0        1400 TO 1499: 14.00-14.99
+     160        1500 TO 1599: 15.00-15.99
+       0        1600 TO 1699: 16.00-16.99
+       0        1700 TO 1799: 17.00-17.99
+       0        1800 TO 1899: 18.00-18.99
+       0        1900 TO 1999: 19.00-19.99
+       0        2000 TO 2999: 20.00-29.99
+       0        3000 TO 9999: 30.00+
+  -------
+    5952
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1276
+TOTAL =========>    7228   VALID SKIP(-4)     668     NON-INTERVIEW(-5)    1088
+ 
+Min:              0        Max:           1521        Mean:               308.5
+ 
+Lead In: S15418.00[Default]
+Default Next Question: S15420.00
+--------------------------------------------------------------------------------
+S15421.00    [CV_HH_SIZE]                                   Survey Year: 2002
+  PRIMARY VARIABLE
+
+             HOUSEHOLD SIZE
+ 
+Household size as of the survey date.
+ 
+       0           0
+     484           1
+    1287           2
+    1916           3
+    1914           4
+    1179           5
+     582           6
+     258           7
+     139           8
+      67           9
+      40          10
+      17          11
+       7          12
+       4          13
+       2          14
+       0          15
+       0          16
+       0          17
+       0          18
+       0          19
+       0          20 TO 99: 20+
+  -------
+    7896
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7896   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1088
+ 
+Min:              1        Max:             14        Mean:                3.81
+ 
+Lead In: S15420.00[Default]
+Default Next Question: S15422.00
+--------------------------------------------------------------------------------
+S15643.00    [CV_URBAN-RURAL]                               Survey Year: 2002
+  PRIMARY VARIABLE
+
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1664       0 Rural
+    5927       1 Urban
+     234       2 Unknown
+  -------
+    7825
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      44
+TOTAL =========>    7869   VALID SKIP(-4)      27     NON-INTERVIEW(-5)    1088
+ 
+Min:              0        Max:              2        Mean:                 .82
+ 
+Lead In: S15532.00[Default]
+Default Next Question: S15646.00
+--------------------------------------------------------------------------------
+S20054.00    [CV_CENSUS_REGION]                             Survey Year: 2003
+  PRIMARY VARIABLE
+
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1282       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1727       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3004       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1701       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7714
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      17
+TOTAL =========>    7731   VALID SKIP(-4)      23     NON-INTERVIEW(-5)    1230
+ 
+Min:              1        Max:              4        Mean:                2.66
+ 
+Lead In: S20053.00[Default]
+Default Next Question: S20055.00
+--------------------------------------------------------------------------------
+S20114.01    [CV_HGC_0304]                                  Survey Year: 2003
+  PRIMARY VARIABLE
+
+             RS HIGHEST GRADE COMPLETED PRIOR TO THE 03/04 ACAD YEAR
+ 
+The highest elementary or secondary grade completed prior to the start of the 
+2003/2004 academic school year.
+ 
+       0       0 NONE
+       0       1 1ST GRADE
+       0       2 2ND GRADE
+       0       3 3RD GRADE
+       0       4 4TH GRADE
+       1       5 5TH GRADE
+      21       6 6TH GRADE
+      38       7 7TH GRADE
+     273       8 8TH GRADE
+     402       9 9TH GRADE
+     525      10 10TH GRADE
+     665      11 11TH GRADE
+    5747      12 12TH GRADE
+       3      95 UNGRADED
+  -------
+    7675
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      79
+TOTAL =========>    7754   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1230
+ 
+Min:              5        Max:             95        Mean:               11.47
+ 
+Lead In: S20114.00[Default]
+Default Next Question: S20115.00
+--------------------------------------------------------------------------------
+S20115.00    [CV_INCOME_GROSS_YR]                           Survey Year: 2003
+  PRIMARY VARIABLE
+
+             GROSS HH INCOME IN PAST YEAR
+ 
+Gross household income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     184           0
+     118           1 TO 1000
+      76        1001 TO 2000
+     169        2001 TO 3000
+     197        3001 TO 5000
+     537        5001 TO 10000
+     891       10001 TO 20000
+     673       20001 TO 30000
+     636       30001 TO 40000
+     477       40001 TO 50000
+     620       50001 TO 65000
+     449       65001 TO 80000
+     502       80001 TO 100000
+     487      100001 TO 150000
+     122      150001 TO 200000
+     171      200001 TO 999999: 200001+
+  -------
+    6309
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1445
+TOTAL =========>    7754   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1230
+ 
+Min:              0        Max:         257697        Mean:            50279.14
+ 
+Lead In: S20114.01[Default]
+Default Next Question: S20116.00
+--------------------------------------------------------------------------------
+S20116.00    [CV_HH_NET_WORTH_Y]                            Survey Year: 2003
+  PRIMARY VARIABLE
+
+             NET WORTH OF HOUSEHOLD ACCORDING TO R
+ 
+Household net worth.
+ 
+COMMENT: from youth interview
+ 
+NOTE: /*Topcoded at predetermined values.  Respondents with household net worth 
+values above $600,000 were topcoded to a value of $600,000.  Negative values of 
+-1, -2, -3, -4, or -5 do not reflect negative monetary amounts; these numbers 
+represent standard NLSY97 codes.*/
+ 
+     119     -999999 TO -3000: < -2999
+      19       -2999 TO -2000
+      26       -1999 TO -1000
+      26        -999 TO -1
+       7           0
+      44           1 TO 1000
+      63        1001 TO 2000
+     555        2001 TO 3000
+     258        3001 TO 5000
+     431        5001 TO 10000
+     248       10001 TO 20000
+      70       20001 TO 30000
+      47       30001 TO 40000
+      16       40001 TO 50000
+      10       50001 TO 65000
+      17       65001 TO 80000
+       6       80001 TO 100000
+       7      100001 TO 150000
+       6      150001 TO 200000
+      19      200001 TO 999999999: 200001+
+  -------
+    1994
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     204
+TOTAL =========>    2198   VALID SKIP(-4)    5556     NON-INTERVIEW(-5)    1230
+ 
+Min:         -47500        Max:         500002        Mean:            10659.65
+ 
+Lead In: S20115.00[Default]
+Default Next Question: S20117.00
+--------------------------------------------------------------------------------
+S20117.00    [CV_HH_POV_RATIO]                              Survey Year: 2003
+  PRIMARY VARIABLE
+
+             RATIO OF HOUSEHOLD INCOME TO POVERTY LEVEL
+ 
+Ratio of household income to poverty level in the previous year.
+ 
+NOTE: /* Topcoded. 2 IMPLIED DECIMAL PLACES */
+ 
+     191           0
+    1503           1 TO 99: .01-.99
+    1206         100 TO 199: 1.00-1.99
+    1034         200 TO 299: 2.00-2.99
+     767         300 TO 399: 3.00-3.99
+     563         400 TO 499: 4.00-4.99
+     319         500 TO 599: 5.00-5.99
+     235         600 TO 699: 6.00-6.99
+     148         700 TO 799: 7.00-7.99
+      98         800 TO 899: 8.00-8.99
+      46         900 TO 999: 9.00-9.99
+      27        1000 TO 1099: 10.00-10.99
+       0        1100 TO 1199: 11.00-11.99
+       0        1200 TO 1299: 12.00-12.99
+       0        1300 TO 1399: 13.00-13.99
+     171        1400 TO 1499: 14.00-14.99
+       0        1500 TO 1599: 15.00-15.99
+       0        1600 TO 1699: 16.00-16.99
+       0        1700 TO 1799: 17.00-17.99
+       0        1800 TO 1899: 18.00-18.99
+       0        1900 TO 1999: 19.00-19.99
+       0        2000 TO 2999: 20.00-29.99
+       0        3000 TO 9999: 30.00+
+  -------
+    6308
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1446
+TOTAL =========>    7754   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1230
+ 
+Min:              0        Max:           1420        Mean:               294.9
+ 
+Lead In: S20116.00[Default]
+Default Next Question: S20118.00
+--------------------------------------------------------------------------------
+S20119.00    [CV_HH_SIZE]                                   Survey Year: 2003
+  PRIMARY VARIABLE
+
+             HOUSEHOLD SIZE
+ 
+Household size as of the survey date.
+ 
+       0           0
+     648           1
+    1563           2
+    1915           3
+    1660           4
+    1009           5
+     505           6
+     227           7
+     121           8
+      56           9
+      33          10
+       9          11
+       5          12
+       2          13
+       1          14
+       0          15
+       0          16
+       0          17
+       0          18
+       0          19
+       0          20 TO 99: 20+
+  -------
+    7754
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7754   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1230
+ 
+Min:              1        Max:             14        Mean:                3.59
+ 
+Lead In: S20118.00[Default]
+Default Next Question: S20120.00
+--------------------------------------------------------------------------------
+S20344.00    [CV_URBAN-RURAL]                               Survey Year: 2003
+  PRIMARY VARIABLE
+
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1520       0 Rural
+    5934       1 Urban
+     255       2 Unknown
+  -------
+    7709
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      22
+TOTAL =========>    7731   VALID SKIP(-4)      23     NON-INTERVIEW(-5)    1230
+ 
+Min:              0        Max:              2        Mean:                 .84
+ 
+Lead In: S20228.00[Default]
+Default Next Question: S20347.00
+--------------------------------------------------------------------------------
+S23329.04    [YSCH-9600~000005]                             Survey Year: 2003
+  PRIMARY VARIABLE
+
+             SUBJECTS R TOOK ADVANCED PLACEMENT EXAMS: ECONOMICS
+ 
+In which subjects did you take the AP exam?   (SELECT ALL THAT APPLY.)
+ 
+UNIVERSE: R with history of formal schooling; attended 11th grade/higher; DLI AP
+test questions not asked; took AP test
+ 
+RESPONSE CHOICE: "Economics (Microeconomics, Macroeconomics)"
+ 
+       0       1 SELECTED
+       3       0 NOT SELECTED
+  -------
+       3
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>       3   VALID SKIP(-4)    7751     NON-INTERVIEW(-5)    1230
+ 
+Min:              0        Max:              0        Mean:                   0
+ 
+Lead In: S23329.03[Default]
+Default Next Question: S23329.05
+--------------------------------------------------------------------------------
+S31650.00    [YAST-4400]                                    Survey Year: 2003
+  PRIMARY VARIABLE
+
+             R HAVE ANY CHECKING, SAVINGS, OR MONEY MARKET ACCOUNTS?
+ 
+Excluding retirement savings, do [you/you or your spouse/partner] have any 
+checking accounts, savings accounts or money market accounts or funds, including
+any such accounts held in investment trusts?
+ 
+UNIVERSE: All
+ 
+    1171       1 YES, RESPONDENT HAS OWN ACCOUNT   (Go To S31651.00)
+      39       2 YES, RESPONDENT HAS OWN ACCOUNTS AND ACCOUNTS JOINTLY WITH 
+                      SPOUSE/PARTNER   (Go To S31651.00)
+      31       3 YES, RESPONDENT ONLY HAS ACCOUNTS JOINTLY WITH SPOUSE/PARTNER  
+                      (Go To S31651.00)
+      37       4 YES, SPOUSE/PARTNER HAS ACCOUNTS SEPARATELY FROM RESPONDENT
+     916       0 NO
+  -------
+    2194
+ 
+Refusal(-1)            3
+Don't Know(-2)         1
+TOTAL =========>    2198   VALID SKIP(-4)    5556     NON-INTERVIEW(-5)    1230
+ 
+Min:              0        Max:              4        Mean:                 .68
+ 
+Lead In: S31637.00[Default] S31643.00[Default] S31644.00[Default] 
+         S31646.00[Default] S31647.00[Default] S31649.00[Default]
+Default Next Question: S31668.00
+--------------------------------------------------------------------------------
+S31651.00    [YAST-4420]                                    Survey Year: 2003
+  PRIMARY VARIABLE
+
+             TOTAL MARKET VALUE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+What is the (total) current balance in all of the checking, savings and money 
+market accounts [you have/you have on your own and you have jointly with your 
+spouse or partner/you have jointly with your spouse or partner]? (Average 
+balance over the past month)
+ 
+INTERVIEWER: IF RESPONDENT IS UNABLE TO GIVE AN EXACT AMOUNT, PROBE FOR A RANGE.
+ 
+UNIVERSE: R or S/P have checking/savings/money market accounts/funds
+ 
+    1173       1 SELECT TO ENTER AMOUNT   (Go To S31652.00)
+      35       2 SELECT TO ENTER RANGE   (Go To S31653.00)
+  -------
+    1208
+ 
+Refusal(-1)           11
+Don't Know(-2)        22
+TOTAL =========>    1241   VALID SKIP(-4)    6513     NON-INTERVIEW(-5)    1230
+ 
+Min:              1        Max:              2        Mean:                1.03
+ 
+Lead In: S31650.00[1:3]
+Default Next Question: S31655.00
+--------------------------------------------------------------------------------
+S31655.00    [YAST-4426]                                    Survey Year: 2003
+  PRIMARY VARIABLE
+
+             ESTIMATED BALANCE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+(HAND R SHOWCARD GG)
+ 
+Please look at this card. Can you tell me the letter of the category that is 
+your best estimate of that amount?
+ 
+UNIVERSE: R or S/P have checking/savings/money market accounts/funds; DK/RF to 
+report total market value of these accounts/funds
+ 
+      46       1 A. $1              -        $1,000
+      19       2 B.  $1,001      -       $2,500
+       5       3 C.  $2,501      -       $5,000
+       4       4 D.  $5,001      -     $10,000
+       1       5 E.   $10,001    -     $25,000
+       1       6 F.   $25,001    -     $50,000
+       1       7 G.   More than   $50,000
+  -------
+      77
+ 
+Refusal(-1)           15
+Don't Know(-2)        23
+TOTAL =========>     115   VALID SKIP(-4)    7639     NON-INTERVIEW(-5)    1230
+ 
+Min:              1        Max:              7        Mean:                1.73
+ 
+Lead In: S31651.00[Default]  S31652.00[-2:-1]
+Default Next Question: S31656.00
+--------------------------------------------------------------------------------
+S38057.00    [CV_CENSUS_REGION]                             Survey Year: 2004
+  PRIMARY VARIABLE
+
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1219       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1641       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    2927       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1676       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7463
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       1
+TOTAL =========>    7464   VALID SKIP(-4)      38     NON-INTERVIEW(-5)    1482
+ 
+Min:              1        Max:              4        Mean:                2.68
+ 
+Lead In: S38054.00[Default]
+Default Next Question: S38058.00
+--------------------------------------------------------------------------------
+S38123.01    [CV_HGC_0405]                                  Survey Year: 2004
+  PRIMARY VARIABLE
+
+             RS HIGHEST GRADE COMPLETED PRIOR TO THE 04/05 ACAD YEAR
+ 
+The highest elementary or secondary grade completed prior to the start of the 
+2004/2005 academic school year.
+ 
+       0       0 NONE
+       0       1 1ST GRADE
+       0       2 2ND GRADE
+       0       3 3RD GRADE
+       0       4 4TH GRADE
+       1       5 5TH GRADE
+      20       6 6TH GRADE
+      39       7 7TH GRADE
+     247       8 8TH GRADE
+     384       9 9TH GRADE
+     474      10 10TH GRADE
+     581      11 11TH GRADE
+    5673      12 12TH GRADE
+       6      95 UNGRADED
+  -------
+    7425
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      77
+TOTAL =========>    7502   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1482
+ 
+Min:              5        Max:             95        Mean:               11.53
+ 
+Lead In: S38123.00[Default]
+Default Next Question: S38124.00
+--------------------------------------------------------------------------------
+S38124.00    [CV_INCOME_FAMILY]                             Survey Year: 2004
+  PRIMARY VARIABLE
+
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     151           0
+      78           1 TO 1000
+      71        1001 TO 2000
+     162        2001 TO 3000
+     172        3001 TO 5000
+     460        5001 TO 10000
+     783       10001 TO 20000
+     665       20001 TO 30000
+     581       30001 TO 40000
+     521       40001 TO 50000
+     570       50001 TO 65000
+     405       65001 TO 80000
+     427       80001 TO 100000
+     504      100001 TO 150000
+     178      150001 TO 200000
+     207      200001 TO 999999: 200001+
+  -------
+    5935
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1567
+TOTAL =========>    7502   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1482
+ 
+Min:              0        Max:         421368        Mean:            58585.96
+ 
+Lead In: S38123.01[Default]
+Default Next Question: S38125.00
+--------------------------------------------------------------------------------
+S38125.00    [CV_HH_POV_RATIO]                              Survey Year: 2004
+  PRIMARY VARIABLE
+
+             RATIO OF HOUSEHOLD INCOME TO POVERTY LEVEL
+ 
+Ratio of household income to poverty level in the previous year.
+ 
+NOTE: /* Topcoded. 2 IMPLIED DECIMAL PLACES */
+ 
+     155           0
+    1305           1 TO 99: .01-.99
+    1081         100 TO 199: 1.00-1.99
+     939         200 TO 299: 2.00-2.99
+     708         300 TO 399: 3.00-3.99
+     497         400 TO 499: 4.00-4.99
+     369         500 TO 599: 5.00-5.99
+     247         600 TO 699: 6.00-6.99
+     151         700 TO 799: 7.00-7.99
+     114         800 TO 899: 8.00-8.99
+      75         900 TO 999: 9.00-9.99
+      52        1000 TO 1099: 10.00-10.99
+      40        1100 TO 1199: 11.00-11.99
+      25        1200 TO 1299: 12.00-12.99
+      13        1300 TO 1399: 13.00-13.99
+       0        1400 TO 1499: 14.00-14.99
+       0        1500 TO 1599: 15.00-15.99
+       0        1600 TO 1699: 16.00-16.99
+       0        1700 TO 1799: 17.00-17.99
+       0        1800 TO 1899: 18.00-18.99
+       0        1900 TO 1999: 19.00-19.99
+     163        2000 TO 2999: 20.00-29.99
+       0        3000 TO 9999: 30.00+
+  -------
+    5934
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1568
+TOTAL =========>    7502   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1482
+ 
+Min:              0        Max:           2627        Mean:              360.51
+ 
+Lead In: S38124.00[Default]
+Default Next Question: S38134.00
+--------------------------------------------------------------------------------
+S38134.00    [CV_HH_SIZE]                                   Survey Year: 2004
+  PRIMARY VARIABLE
+
+             HOUSEHOLD SIZE
+ 
+Household size as of the survey date.
+ 
+       0           0
+     777           1
+    1792           2
+    1868           3
+    1434           4
+     800           5
+     427           6
+     198           7
+     133           8
+      39           9
+      16          10
+      15          11
+       2          12
+       1          13
+       0          14
+       0          15
+       0          16
+       0          17
+       0          18
+       0          19
+       0          20 TO 99: 20+
+  -------
+    7502
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7502   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1482
+ 
+Min:              1        Max:             13        Mean:                3.39
+ 
+Lead In: S38125.00[Default]
+Default Next Question: S38135.00
+--------------------------------------------------------------------------------
+S38358.00    [CV_URBAN-RURAL]                               Survey Year: 2004
+  PRIMARY VARIABLE
+
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1404       0 Rural
+    5884       1 Urban
+     177       2 Unknown
+  -------
+    7465
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       1
+TOTAL =========>    7466   VALID SKIP(-4)      36     NON-INTERVIEW(-5)    1482
+ 
+Min:              0        Max:              2        Mean:                 .84
+ 
+Lead In: S38237.00[Default]
+Default Next Question: S38361.00
+--------------------------------------------------------------------------------
+S41046.04    [YSCH-9600~000005]                             Survey Year: 2004
+  PRIMARY VARIABLE
+
+             SUBJECTS R TOOK ADVANCED PLACEMENT EXAMS: ECONOMICS
+ 
+In which subjects did you take the AP exam?
+ 
+(SELECT ALL THAT APPLY.)
+ 
+UNIVERSE: R with history of formal schooling; attended 11th grade/higher; DLI AP
+test questions not asked; took AP test
+ 
+RESPONSE CHOICE: "Economics (Microeconomics, Macroeconomics)"
+ 
+       0       1 SELECTED
+       2       0 NOT SELECTED
+  -------
+       2
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>       2   VALID SKIP(-4)    7500     NON-INTERVIEW(-5)    1482
+ 
+Min:              0        Max:              0        Mean:                   0
+ 
+Lead In: S41046.03[Default]
+Default Next Question: S41046.05
+--------------------------------------------------------------------------------
+S48226.00    [YAST-4400]                                    Survey Year: 2004
+  PRIMARY VARIABLE
+
+             R HAVE ANY CHECKING, SAVINGS, OR MONEY MARKET ACCOUNTS?
+ 
+Excluding retirement savings, do [you/you or your spouse/you or your partner] 
+have any checking accounts, savings accounts or money market accounts or funds, 
+including any such accounts held in investment trusts?
+ 
+UNIVERSE: All
+ 
+     791       1 YES, RESPONDENT HAS OWN ACCOUNT   (Go To S48227.00)
+      33       2 YES, RESPONDENT HAS OWN ACCOUNTS AND ACCOUNTS JOINTLY WITH 
+                      SPOUSE/PARTNER   (Go To S48227.00)
+      34       3 YES, RESPONDENT ONLY HAS ACCOUNTS JOINTLY WITH SPOUSE/PARTNER  
+                      (Go To S48227.00)
+      13       4 YES, SPOUSE/PARTNER HAS ACCOUNTS SEPARATELY FROM RESPONDENT
+     735       0 NO
+  -------
+    1606
+ 
+Refusal(-1)            3
+Don't Know(-2)         6
+TOTAL =========>    1615   VALID SKIP(-4)    5887     NON-INTERVIEW(-5)    1482
+ 
+Min:              0        Max:              4        Mean:                 .63
+ 
+Lead In: S48217.00[Default] S48221.00[Default] S48222.00[Default] 
+         S48224.00[Default] S48225.00[Default]
+Default Next Question: S48244.00
+--------------------------------------------------------------------------------
+S48227.00    [YAST-4420]                                    Survey Year: 2004
+  PRIMARY VARIABLE
+
+             TOTAL MARKET VALUE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+What is the (total) current balance in all of the checking, savings and money 
+market accounts [you have/you have on your own and you have jointly with your 
+spouse/partner]? (Average balance over the past month)
+ 
+INTERVIEWER: IF RESPONDENT IS UNABLE TO GIVE AN EXACT AMOUNT, PROBE FOR A RANGE.
+ 
+UNIVERSE: R or S/P have checking/savings/money market accounts/funds
+ 
+     777       1 SELECT TO ENTER AMOUNT   (Go To S48228.00)
+      19       2 SELECT TO ENTER RANGE   (Go To S48229.00)
+  -------
+     796
+ 
+Refusal(-1)           24
+Don't Know(-2)        38
+TOTAL =========>     858   VALID SKIP(-4)    6644     NON-INTERVIEW(-5)    1482
+ 
+Min:              1        Max:              2        Mean:                1.02
+ 
+Lead In: S48226.00[1:3]
+Default Next Question: S48231.00
+--------------------------------------------------------------------------------
+S48231.00    [YAST-4426]                                    Survey Year: 2004
+  PRIMARY VARIABLE
+
+             ESTIMATED BALANCE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+(HAND R SHOWCARD GG)
+ 
+Please look at this card. Can you tell me the letter of the category that is 
+your best estimate of that amount?
+ 
+UNIVERSE: R or S/P have checking/savings/money market accounts/funds; DK/RF to 
+report total market value of these accounts/funds
+ 
+      34       1 A. $1              -        $1,000
+       9       2 B.  $1,001      -       $2,500
+       4       3 C.  $2,501      -       $5,000
+       8       4 D.  $5,001      -     $10,000
+       3       5 E.   $10,001    -     $25,000
+       0       6 F.   $25,001    -     $50,000
+       0       7 G.   More than   $50,000
+  -------
+      58
+ 
+Refusal(-1)           19
+Don't Know(-2)        15
+TOTAL =========>      92   VALID SKIP(-4)    7410     NON-INTERVIEW(-5)    1482
+ 
+Min:              1        Max:              5        Mean:                1.91
+ 
+Lead In: S48227.00[Default]  S48228.00[-2:-1]
+Default Next Question: S48232.00
+--------------------------------------------------------------------------------
+S54056.00    [CV_CENSUS_REGION]                             Survey Year: 2005
+  PRIMARY VARIABLE
+
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1182       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1600       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    2883       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1638       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7303
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7303   VALID SKIP(-4)      35     NON-INTERVIEW(-5)    1646
+ 
+Min:              1        Max:              4        Mean:                2.68
+ 
+Lead In: S54055.00[Default]
+Default Next Question: S54057.00
+--------------------------------------------------------------------------------
+S54127.00    [CV_HGC_0506]                                  Survey Year: 2005
+  PRIMARY VARIABLE
+
+             HIGHEST GRADE COMPLETED PRIOR TO THE 05/06 ACAD YEAR
+ 
+The highest elementary or secondary grade completed prior to the start of the 
+2005/2006 academic school year.
+ 
+       0       0 None
+       0       1 1st Grade
+       0       2 2nd Grade
+       0       3 3rd Grade
+       0       4 4th Grade
+       1       5 5th Grade
+      20       6 6th Grade
+      36       7 7th Grade
+     250       8 8th Grade
+     369       9 9th Grade
+     484      10 10th Grade
+     565      11 11th Grade
+    5536      12 12th Grade
+       6      95 Ungraded
+  -------
+    7267
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      71
+TOTAL =========>    7338   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1646
+ 
+Min:              5        Max:             95        Mean:               11.53
+ 
+Lead In: S54126.00[Default]
+Default Next Question: S54128.00
+--------------------------------------------------------------------------------
+S54128.00    [CV_INCOME_FAMILY]                             Survey Year: 2005
+  PRIMARY VARIABLE
+
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     121           0
+      99           1 TO 1000
+      49        1001 TO 2000
+     116        2001 TO 3000
+     169        3001 TO 5000
+     414        5001 TO 10000
+     826       10001 TO 20000
+     743       20001 TO 30000
+     688       30001 TO 40000
+     534       40001 TO 50000
+     624       50001 TO 65000
+     458       65001 TO 80000
+     476       80001 TO 100000
+     461      100001 TO 150000
+     157      150001 TO 200000
+     175      200001 TO 999999: 200001+
+  -------
+    6110
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1228
+TOTAL =========>    7338   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1646
+ 
+Min:              0        Max:         343969        Mean:            55110.96
+ 
+Lead In: S54127.00[Default]
+Default Next Question: S54129.00
+--------------------------------------------------------------------------------
+S54129.00    [CV_HH_POV_RATIO]                              Survey Year: 2005
+  PRIMARY VARIABLE
+
+             RATIO OF HOUSEHOLD INCOME TO POVERTY LEVEL
+ 
+Ratio of household income to poverty level in the previous year.
+ 
+NOTE: /* Topcoded. 2 IMPLIED DECIMAL PLACES */
+ 
+     128           0
+    1240           1 TO 99: .01-.99
+    1229         100 TO 199: 1.00-1.99
+    1022         200 TO 299: 2.00-2.99
+     765         300 TO 399: 3.00-3.99
+     521         400 TO 499: 4.00-4.99
+     383         500 TO 599: 5.00-5.99
+     226         600 TO 699: 6.00-6.99
+     168         700 TO 799: 7.00-7.99
+     113         800 TO 899: 8.00-8.99
+      53         900 TO 999: 9.00-9.99
+      51        1000 TO 1099: 10.00-10.99
+      25        1100 TO 1199: 11.00-11.99
+      14        1200 TO 1299: 12.00-12.99
+       3        1300 TO 1399: 13.00-13.99
+       0        1400 TO 1499: 14.00-14.99
+       0        1500 TO 1599: 15.00-15.99
+       0        1600 TO 1699: 16.00-16.99
+       0        1700 TO 1799: 17.00-17.99
+       0        1800 TO 1899: 18.00-18.99
+       0        1900 TO 1999: 19.00-19.99
+     161        2000 TO 2999: 20.00-29.99
+       0        3000 TO 9999: 30.00+
+  -------
+    6102
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1236
+TOTAL =========>    7338   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1646
+ 
+Min:              0        Max:           2025        Mean:              336.87
+ 
+Lead In: S54128.00[Default]
+Default Next Question: S54130.00
+--------------------------------------------------------------------------------
+S54130.00    [CV_HH_SIZE]                                   Survey Year: 2005
+  PRIMARY VARIABLE
+
+             HOUSEHOLD SIZE
+ 
+Household size as of the survey date.
+ 
+       0           0
+     848           1
+    1887           2
+    1834           3
+    1358           4
+     727           5
+     323           6
+     180           7
+      98           8
+      43           9
+      19          10
+      11          11
+       7          12
+       1          13
+       1          14
+       0          15
+       0          16
+       0          17
+       0          18
+       0          19
+       0          20 TO 99: 20+
+  -------
+    7337
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       1
+TOTAL =========>    7338   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1646
+ 
+Min:              1        Max:             14        Mean:                3.27
+ 
+Lead In: S54129.00[Default]
+Default Next Question: S54131.00
+--------------------------------------------------------------------------------
+S54363.00    [CV_URBAN-RURAL]                               Survey Year: 2005
+  PRIMARY VARIABLE
+
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1337       0 Rural
+    5798       1 Urban
+     145       2 Unknown
+  -------
+    7280
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      21
+TOTAL =========>    7301   VALID SKIP(-4)      37     NON-INTERVIEW(-5)    1646
+ 
+Min:              0        Max:              2        Mean:                 .84
+ 
+Lead In: S54237.00[Default]
+Default Next Question: S54366.00
+--------------------------------------------------------------------------------
+S56647.04    [YSCH-9600~000005]                             Survey Year: 2005
+  PRIMARY VARIABLE
+
+             SUBJECTS R TOOK ADVANCED PLACEMENT EXAMS: ECONOMICS
+ 
+In which subjects did you take the AP exam?
+ 
+(SELECT ALL THAT APPLY.)
+ 
+UNIVERSE: R with history of formal schooling; attended 11th grade/higher; DLI AP
+test questions not asked; took AP test
+ 
+RESPONSE CHOICE: "Economics (Microeconomics, Macroeconomics)"
+ 
+       0       1 SELECTED
+       2       0 NOT SELECTED
+  -------
+       2
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>       2   VALID SKIP(-4)    7336     NON-INTERVIEW(-5)    1646
+ 
+Min:              0        Max:              0        Mean:                   0
+ 
+Lead In: S56647.03[Default]
+Default Next Question: S56647.05
+--------------------------------------------------------------------------------
+S65184.00    [YAST-4400]                                    Survey Year: 2005
+  PRIMARY VARIABLE
+
+             R HAVE ANY CHECKING, SAVINGS, OR MONEY MARKET ACCOUNTS?
+ 
+Excluding retirement savings, do [you/you or your spouse/you or your partner] 
+have any checking accounts, savings accounts or money market accounts or funds, 
+including any such accounts held in investment trusts?
+ 
+UNIVERSE: All
+ 
+      82       1 YES, RESPONDENT HAS OWN ACCOUNT   (Go To S65185.00)
+       4       2 YES, RESPONDENT HAS OWN ACCOUNTS AND ACCOUNTS JOINTLY WITH 
+                      SPOUSE/PARTNER   (Go To S65185.00)
+       5       3 YES, RESPONDENT ONLY HAS ACCOUNTS JOINTLY WITH SPOUSE/PARTNER  
+                      (Go To S65185.00)
+       7       4 YES, SPOUSE/PARTNER HAS ACCOUNTS SEPARATELY FROM RESPONDENT
+      83       0 NO
+  -------
+     181
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>     181   VALID SKIP(-4)    7157     NON-INTERVIEW(-5)    1646
+ 
+Min:              0        Max:              4        Mean:                 .73
+ 
+Lead In: S65177.00[Default] S65183.00[Default]
+Default Next Question: S65202.00
+--------------------------------------------------------------------------------
+S65185.00    [YAST-4420]                                    Survey Year: 2005
+  PRIMARY VARIABLE
+
+             TOTAL MARKET VALUE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+What is the (total) current balance in all of the checking, savings and money 
+market accounts [you have/you have on your own and you have jointly with your 
+spouse/partner]? (Average balance over the past month)
+ 
+INTERVIEWER: IF RESPONDENT IS UNABLE TO GIVE AN EXACT AMOUNT, PROBE FOR A RANGE.
+ 
+UNIVERSE: R or S/P have checking/savings/money market accounts/funds
+ 
+      75       1 SELECT TO ENTER AMOUNT   (Go To S65186.00)
+       1       2 SELECT TO ENTER RANGE   (Go To S65187.00)
+  -------
+      76
+ 
+Refusal(-1)            7
+Don't Know(-2)         8
+TOTAL =========>      91   VALID SKIP(-4)    7247     NON-INTERVIEW(-5)    1646
+ 
+Min:              1        Max:              2        Mean:                1.01
+ 
+Lead In: S65184.00[1:3]
+Default Next Question: S65189.00
+--------------------------------------------------------------------------------
+S65189.00    [YAST-4426]                                    Survey Year: 2005
+  PRIMARY VARIABLE
+
+             ESTIMATED BALANCE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+(HAND R SHOWCARD GG)
+ 
+Please look at this card. Can you tell me the letter of the category that is 
+your best estimate of that amount?
+ 
+UNIVERSE: R or S/P have checking/savings/money market accounts/funds; DK/RF to 
+report total market value of these accounts/funds
+ 
+       4       1 A. $1              -        $1,000
+       4       2 B.  $1,001      -       $2,500
+       0       3 C.  $2,501      -       $5,000
+       0       4 D.  $5,001      -     $10,000
+       1       5 E.   $10,001    -     $25,000
+       0       6 F.   $25,001    -     $50,000
+       1       7 G.   More than   $50,000
+  -------
+      10
+ 
+Refusal(-1)            6
+Don't Know(-2)         3
+TOTAL =========>      19   VALID SKIP(-4)    7319     NON-INTERVIEW(-5)    1646
+ 
+Min:              1        Max:              7        Mean:                 2.4
+ 
+Lead In: S65185.00[Default]  S65186.00[-2:-1]
+Default Next Question: S65190.00
+--------------------------------------------------------------------------------
+S75061.00    [CV_CENSUS_REGION]                             Survey Year: 2006
+  PRIMARY VARIABLE
+
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1187       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1628       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3002       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1698       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7515
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       5
+TOTAL =========>    7520   VALID SKIP(-4)      39     NON-INTERVIEW(-5)    1425
+ 
+Min:              1        Max:              4        Mean:                2.69
+ 
+Lead In: S75060.00[Default]
+Default Next Question: S75062.00
+--------------------------------------------------------------------------------
+S75136.00    [CV_HGC_0607]                                  Survey Year: 2006
+  PRIMARY VARIABLE
+
+             HIGHEST GRADE COMPLETED PRIOR TO THE 06/07 ACAD YEAR
+ 
+The highest elementary or secondary grade completed prior to the start of the 
+2006/2007 academic school year.
+ 
+       0       0 None
+       0       1 1st Grade
+       0       2 2nd Grade
+       0       3 3rd Grade
+       0       4 4th Grade
+       2       5 5th Grade
+      19       6 6th Grade
+      41       7 7th Grade
+     260       8 8th Grade
+     395       9 9th Grade
+     492      10 10th Grade
+     586      11 11th Grade
+    5680      12 12th Grade
+       5      95 Ungraded
+  -------
+    7480
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      79
+TOTAL =========>    7559   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1425
+ 
+Min:              5        Max:             95        Mean:                11.5
+ 
+Lead In: S75135.00[Default]
+Default Next Question: S75137.00
+--------------------------------------------------------------------------------
+S75137.00    [CV_INCOME_FAMILY]                             Survey Year: 2006
+  PRIMARY VARIABLE
+
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     138           0
+      83           1 TO 1000
+      58        1001 TO 2000
+     124        2001 TO 3000
+     136        3001 TO 5000
+     356        5001 TO 10000
+     822       10001 TO 20000
+     721       20001 TO 30000
+     705       30001 TO 40000
+     550       40001 TO 50000
+     628       50001 TO 65000
+     522       65001 TO 80000
+     421       80001 TO 100000
+     519      100001 TO 150000
+     178      150001 TO 200000
+     186      200001 TO 999999: 200001+
+  -------
+    6147
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1412
+TOTAL =========>    7559   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:         321273        Mean:            56341.96
+ 
+Lead In: S75136.00[Default]
+Default Next Question: S75138.00
+--------------------------------------------------------------------------------
+S75138.00    [CV_HH_POV_RATIO]                              Survey Year: 2006
+  PRIMARY VARIABLE
+
+             RATIO OF HOUSEHOLD INCOME TO POVERTY LEVEL
+ 
+Ratio of household income to poverty level in the previous year.
+ 
+NOTE: /* Topcoded. 2 IMPLIED DECIMAL PLACES */
+ 
+     142           0
+    1183           1 TO 99: .01-.99
+    1267         100 TO 199: 1.00-1.99
+    1012         200 TO 299: 2.00-2.99
+     755         300 TO 399: 3.00-3.99
+     558         400 TO 499: 4.00-4.99
+     354         500 TO 599: 5.00-5.99
+     239         600 TO 699: 6.00-6.99
+     176         700 TO 799: 7.00-7.99
+     117         800 TO 899: 8.00-8.99
+      69         900 TO 999: 9.00-9.99
+      50        1000 TO 1099: 10.00-10.99
+      21        1100 TO 1199: 11.00-11.99
+      27        1200 TO 1299: 12.00-12.99
+       4        1300 TO 1399: 13.00-13.99
+       0        1400 TO 1499: 14.00-14.99
+       0        1500 TO 1599: 15.00-15.99
+       0        1600 TO 1699: 16.00-16.99
+       0        1700 TO 1799: 17.00-17.99
+       0        1800 TO 1899: 18.00-18.99
+       0        1900 TO 1999: 19.00-19.99
+     166        2000 TO 2999: 20.00-29.99
+       0        3000 TO 9999: 30.00+
+  -------
+    6140
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1419
+TOTAL =========>    7559   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:           2029        Mean:              343.45
+ 
+Lead In: S75137.00[Default]
+Default Next Question: S75139.00
+--------------------------------------------------------------------------------
+S75139.00    [CV_HH_SIZE]                                   Survey Year: 2006
+  PRIMARY VARIABLE
+
+             HOUSEHOLD SIZE
+ 
+Household size as of the survey date.
+ 
+       0           0
+     890           1
+    2011           2
+    1880           3
+    1371           4
+     763           5
+     312           6
+     167           7
+      99           8
+      39           9
+      12          10
+      10          11
+       3          12
+       0          13
+       1          14
+       1          15
+       0          16
+       0          17
+       0          18
+       0          19
+       0          20 TO 99: 20+
+  -------
+    7559
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7559   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1425
+ 
+Min:              1        Max:             15        Mean:                3.22
+ 
+Lead In: S75138.00[Default]
+Default Next Question: S75140.00
+--------------------------------------------------------------------------------
+S75371.00    [CV_URBAN-RURAL]                               Survey Year: 2006
+  PRIMARY VARIABLE
+
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1410       0 Rural
+    5908       1 Urban
+     185       2 Unknown
+  -------
+    7503
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      17
+TOTAL =========>    7520   VALID SKIP(-4)      39     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:              2        Mean:                 .84
+ 
+Lead In: S75258.00[Default]
+Default Next Question: S75374.00
+--------------------------------------------------------------------------------
+S77407.04    [YSCH-9600~000005]                             Survey Year: 2006
+  PRIMARY VARIABLE
+
+             SUBJECTS R TOOK ADVANCED PLACEMENT EXAMS: ECONOMICS
+ 
+In which subjects did you take the AP exam?
+ 
+(SELECT ALL THAT APPLY.)
+ 
+UNIVERSE: R with history of formal schooling; attended 11th grade/higher; DLI AP
+test questions not asked; took AP test
+ 
+RESPONSE CHOICE: "Economics (Microeconomics, Macroeconomics)"
+ 
+       0       1 SELECTED
+       3       0 NOT SELECTED
+  -------
+       3
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>       3   VALID SKIP(-4)    7556     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:              0        Mean:                   0
+ 
+Lead In: S77407.03[Default]
+Default Next Question: S77407.05
+--------------------------------------------------------------------------------
+S85165.00    [YAST-4400]                                    Survey Year: 2006
+  PRIMARY VARIABLE
+
+             R HAVE ANY CHECKING, SAVINGS, OR MONEY MARKET ACCOUNTS?
+ 
+Excluding retirement savings, do [you/you or your spouse/you or your partner] 
+have any checking accounts, savings accounts or money market accounts or funds, 
+including any such accounts held in investment trusts?
+ 
+UNIVERSE: R not yet age-eligible for Assets25 section who turned 20 since DLI
+ 
+      44       1 YES, RESPONDENT HAS OWN ACCOUNT   (Go To S85166.00)
+       5       2 YES, RESPONDENT HAS OWN ACCOUNTS AND ACCOUNTS JOINTLY WITH 
+                      SPOUSE/PARTNER   (Go To S85166.00)
+      11       3 YES, RESPONDENT ONLY HAS ACCOUNTS JOINTLY WITH SPOUSE/PARTNER  
+                      (Go To S85166.00)
+       2       4 YES, SPOUSE/PARTNER HAS ACCOUNTS SEPARATELY FROM RESPONDENT
+      41       0 NO
+  -------
+     103
+ 
+Refusal(-1)            1
+Don't Know(-2)         0
+TOTAL =========>     104   VALID SKIP(-4)    7455     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:              4        Mean:                 .92
+ 
+Lead In: S85158.00[Default] S85164.00[Default]
+Default Next Question: S85180.00
+--------------------------------------------------------------------------------
+S85166.00    [YAST-4420]                                    Survey Year: 2006
+  PRIMARY VARIABLE
+
+             TOTAL MARKET VALUE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+What is the (total) current balance in all of the checking, savings and money 
+market accounts [you have/you have on your own and you have jointly with your 
+spouse/partner]? (Average balance over the past month)
+ 
+INTERVIEWER: IF RESPONDENT IS UNABLE TO GIVE AN EXACT AMOUNT, PROBE FOR A RANGE.
+ 
+UNIVERSE: R not yet age-eligible for Assets25 section who turned 20 since DLI; R
+or S/P have checking/savings/money market accounts/funds
+ 
+      52       1 SELECT TO ENTER AMOUNT   (Go To S85167.00)
+       1       2 SELECT TO ENTER RANGE   (Go To S85168.00)
+  -------
+      53
+ 
+Refusal(-1)            2
+Don't Know(-2)         5
+TOTAL =========>      60   VALID SKIP(-4)    7499     NON-INTERVIEW(-5)    1425
+ 
+Min:              1        Max:              2        Mean:                1.02
+ 
+Lead In: S85165.00[1:3]
+Default Next Question: S85170.00
+--------------------------------------------------------------------------------
+S85170.00    [YAST-4426]                                    Survey Year: 2006
+  PRIMARY VARIABLE
+
+             ESTIMATED BALANCE OF RS CHECKING, SAVINGS, MONEY MARKET ACCOUNTS
+ 
+(HAND R SHOWCARD GG)
+ 
+Please look at this card. Can you tell me the letter of the category that is 
+your best estimate of that amount?
+ 
+UNIVERSE: R not yet age-eligible for Assets25 section who turned 20 since DLI; R
+or S/P have checking/savings/money market accounts/funds; DK/RF to report total 
+market value of these accounts/funds
+ 
+       9       1 A. $1              -        $1,000
+       0       2 B.  $1,001      -       $2,500
+       0       3 C.  $2,501      -       $5,000
+       0       4 D.  $5,001      -     $10,000
+       0       5 E.   $10,001    -     $25,000
+       0       6 F.   $25,001    -     $50,000
+       0       7 G.   More than   $50,000
+  -------
+       9
+ 
+Refusal(-1)            2
+Don't Know(-2)         1
+TOTAL =========>      12   VALID SKIP(-4)    7547     NON-INTERVIEW(-5)    1425
+ 
+Min:              1        Max:              1        Mean:                   1
+ 
+Lead In: S85166.00[Default]  S85167.00[-2:-1]
+Default Next Question: S85171.00
+--------------------------------------------------------------------------------
+Z90497.00    [CVC_ASSETS_FINANCIAL_20]                      Survey Year: XRND
+  PRIMARY VARIABLE
+
+             FINANCIAL ASSETS AGE 20
+ 
+CUMULATIVE VARIABLE: Value of financial assets at age 20. This variable is 
+created for all respondents regardless of interview status in the current round;
+CVC_ASSETS_RND_20 provides the round of the respondent's age 20 assets 
+interview.
+ 
+NOTE: /*Topcoded to predetermined values.  Respondents with finacial asset 
+values above $300,000 were topcoded to a value of $300,000.  Negative values of 
+-1, -2, -3, -4, or -5 do not reflect negative monetary amounts; these numbers 
+represent standard NLSY97 codes.*/
+ 
+NOTE: Researchers should note that the age 20 and age 25 variables do not 
+include assets/debts solely held by the respondent's partner/spouse as the 
+questionnaire did not collect this information. As a result, these variables are
+not strictly comparable to similar items collected beginning with the age 30 
+interview which, due to a questionnaire change, include those values.
+ 
+       0    -9999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+    3752           0
+    2609           1 TO 1000
+     540        1001 TO 2000
+     313        2001 TO 3000
+     318        3001 TO 5000
+     316        5001 TO 10000
+     166       10001 TO 20000
+      52       20001 TO 30000
+      22       30001 TO 40000
+      19       40001 TO 50000
+      14       50001 TO 65000
+       5       65001 TO 80000
+       6       80001 TO 100000
+      10      100001 TO 150000
+       5      150001 TO 200000
+      19      200001 TO 999999999: 200001+
+  -------
+    8166
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     376
+TOTAL =========>    8542   VALID SKIP(-4)     442     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:         300000        Mean:             2519.94
+ 
+Lead In: Z90496.00[Default]
+Default Next Question: Z90498.00
+--------------------------------------------------------------------------------
+Z90501.00    [CVC_ASSETS_DEBTS_20]                          Survey Year: XRND
+  PRIMARY VARIABLE
+
+             DEBT AT AGE 20
+ 
+CUMULATIVE VARIABLE: Amount of financial debt owed at age 20. This variable is 
+created for all respondents regardless of interview status in the current round;
+CVC_ASSETS_RND_20 provides the round of the respondent's age 20 assets 
+interview.
+ 
+NOTE: /*Topcoded to predetermined values.  Respondents with non-housing debt 
+values above $370,000 were topcoded to a value of $370,000.  Negative values of 
+-1, -2, -3, -4, or -5 do not reflect negative monetary amounts; these numbers 
+represent standard NLSY97 codes.*/
+ 
+NOTE: Researchers should note that the age 20 and age 25 variables do not 
+include assets/debts solely held by the respondent's partner/spouse as the 
+questionnaire did not collect this information. As a result, these variables are
+not strictly comparable to similar items collected beginning with the age 30 
+interview which, due to a questionnaire change, include those values.
+ 
+       0    -9999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+    4613           0
+     972           1 TO 1000
+     394        1001 TO 2000
+     281        2001 TO 3000
+     444        3001 TO 5000
+     731        5001 TO 10000
+     656       10001 TO 20000
+     184       20001 TO 30000
+      59       30001 TO 40000
+      20       40001 TO 50000
+      10       50001 TO 65000
+       3       65001 TO 80000
+       6       80001 TO 100000
+       1      100001 TO 150000
+       1      150001 TO 200000
+       0      200001 TO 999999999: 200001+
+  -------
+    8375
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     167
+TOTAL =========>    8542   VALID SKIP(-4)     442     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:         200000        Mean:             3394.51
+ 
+Lead In: Z90500.00[Default]
+Default Next Question: Z90502.00

@@ -1,0 +1,11 @@
+source_dataset,survey_year,respondent_id,household_id,age,age_band,female,education_level,census_region,household_size,underserved_200fpl,underserved_method,household_income_2020_usd,income_is_banded,financial_knowledge_score,savings_behavior_index,credit_behavior_index,spending_behavior_index,weight
+scf_2022,2022,311,31,23,18-24,0.0,3,,1,0.0,income_vs_200fpl_by_hhsize,38236.0,False,66.67,100.0,100.0,83.33,11364.335766
+scf_2022,2022,312,31,23,18-24,0.0,3,,1,0.0,income_vs_200fpl_by_hhsize,38236.0,False,66.67,100.0,100.0,83.33,11744.934414
+scf_2022,2022,313,31,23,18-24,0.0,3,,1,0.0,income_vs_200fpl_by_hhsize,53531.0,False,66.67,100.0,100.0,83.33,11388.437624
+scf_2022,2022,314,31,23,18-24,0.0,3,,1,0.0,income_vs_200fpl_by_hhsize,39192.0,False,66.67,100.0,100.0,83.33,11723.022029
+scf_2022,2022,315,31,23,18-24,0.0,3,,1,0.0,income_vs_200fpl_by_hhsize,40148.0,False,66.67,100.0,100.0,83.33,11469.061251
+scf_2022,2022,45301,4530,24,18-24,0.0,2,,1,0.0,income_vs_200fpl_by_hhsize,374717.0,False,66.67,100.0,100.0,50.0,6399.027948
+scf_2022,2022,45302,4530,24,18-24,0.0,2,,1,0.0,income_vs_200fpl_by_hhsize,358466.0,False,66.67,100.0,100.0,50.0,7020.4471768
+scf_2022,2022,45303,4530,24,18-24,0.0,2,,1,0.0,income_vs_200fpl_by_hhsize,352731.0,False,66.67,100.0,100.0,50.0,7618.9113751
+scf_2022,2022,45304,4530,24,18-24,0.0,2,,1,0.0,income_vs_200fpl_by_hhsize,403394.0,False,66.67,100.0,100.0,50.0,6829.5915924
+scf_2022,2022,45305,4530,24,18-24,0.0,2,,1,0.0,income_vs_200fpl_by_hhsize,391923.0,False,66.67,100.0,100.0,50.0,6601.2765259
