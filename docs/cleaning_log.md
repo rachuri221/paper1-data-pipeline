@@ -59,7 +59,7 @@ All key variables not listed here were <5% → eligible for item-11 auto-imputat
 - NFCS 2018 `M6` 13.16%, `M9` 16.56% (5–20%, item 12)
 - NFCS 2018 `M7` 21.79%, `M8` 37.88%, `M10` 44.65% (>20%, item 13: potentially unusable)
 - NFCS 2021 `M6` 15.23% (5–20%); `M7` 23.09%, `M8` 40.43%, `M9` 20.51%, `M10` 45.30% (>20%)
-- ⚠️ Caveat: NFCS literacy "missing" is almost entirely code 98 = "Don't know" (99 refused <1%).
+- Caveat: NFCS literacy "missing" is almost entirely code 98 = "Don't know" (99 refused <1%).
   FINRA scores "Don't know" as *incorrect*, not missing — treatment is a flag-and-discuss item (B5).
 
 ### Open decisions — RESOLVED (research lead / Lydia, 2026-07-23)
