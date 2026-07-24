@@ -1,20 +1,20 @@
-# Paper 1 — Independent Validation Report (Rohan, Task 1)
+# Paper 1 — Independent Validation Report 
 
-**Validator:** Rohan (Data Analyst 2). **Method:** every check is re-derived directly from the **raw**
-files (`analysis/independent_validation.py`), *not* by re-running Yousef's pipeline — so this is a genuine
+**Validator:** Secondary Data Analyst - . **Method:** every check is re-derived directly from the **raw**
+files (`analysis/independent_validation.py`), *not* by re-running Data Analyst's pipeline — so this is a genuine
 independent reproduction, not a circular re-run. Random seed = 42 (reproducible). Compared against the
-cleaned files and Yousef's `outputs/validation_summary.json`.
+cleaned files and Data Analysts `outputs/validation_summary.json`.
 
 **Result: all checks PASS — 0 discrepancies. The cleaned data reproduces exactly from raw.**
-(Per spec item 4, any discrepancy would be reported here and raised with Yousef, not fixed unilaterally.)
+(Per spec item 4, any discrepancy would be reported here and raised with Data Analyst, not fixed unilaterally.)
 
 ---
 
-## Check 1 — Null counts (item 1): independent recount vs Yousef's output
-Recounted nulls in the four primary outcome variables for each dataset and compared to Yousef's recorded
+## Check 1 — Null counts (item 1): independent recount vs Data Analyst's output
+Recounted nulls in the four primary outcome variables for each dataset and compared to Data Analyst's recorded
 `nulls_in_primary`. **Every dataset matches exactly.**
 
-| Dataset | Independent null counts (knowledge / savings / credit / spending) | Matches Yousef? |
+| Dataset | Independent null counts (knowledge / savings / credit / spending) | Matches Initial? |
 |---|---|---|
 | cfpb_nfwbs_2016 | 0 / 0 / **414** / 0 | ✅ |
 | scf_2022 | 0 / 0 / 0 / 0 | ✅ |
@@ -57,7 +57,7 @@ cleaned value (tolerance 0.05). **All matched.**
 Independently confirmed on all 5 cleaned datasets: **0 duplicate `respondent_id`**, **0 index values
 outside [0,100]**, **all `age` within 18–24**, **all income ≥ 0**.
 - Note (not a discrepancy): SCF `respondent_id` (Y1) is unique, but `household_id` (YY1) repeats 5× by
-  design (multiple-imputation implicates). Confirmed this is expected, per Yousef's log.
+  design (multiple-imputation implicates). Confirmed this is expected, per Data Analyst's log.
 
 ---
 
