@@ -1,6 +1,4 @@
 """
-Rohan — Task 1: INDEPENDENT validation of Yousef's cleaned Paper 1 data.
-
 Re-derives every check straight from the RAW files (does NOT import the cleaning
 pipeline — that would be circular). Compares against the cleaned outputs and
 Yousef's recorded validation_summary.json.
