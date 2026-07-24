@@ -1,16 +1,11 @@
 """
-Paper 1 — data cleaning pipeline (Yousef, Assignment 2).
+Paper 1 — data cleaning pipeline
 
 Implements the 6-step spec for the usable datasets:
   CFPB National Financial Well-Being Survey 2016, Federal Reserve SCF 2022,
   FINRA NFCS 2018, FINRA NFCS 2021.
 (CFPB Youth Survey dropped — not public; NLSY97 pending re-pull — see cleaning_log.md.)
 
-Decisions locked with the research lead / Lydia:
-  B3  age filter = 18-24 (research lead changed target bracket from 13-22 to fit the data)
-  B4  <=200% FPL indicator constructed from income + household size (option A)
-  B5  NFCS literacy "Don't know" (98) scored as INCORRECT, not missing; anything still
-      >=5% missing after that is HELD (not imputed) and surfaced for confirmation.
 
 Nothing >20% missing is imputed; >3SD outliers are FLAGGED, never removed (spec items 13/26).
 Raw files are never modified; all outputs go to data/cleaned/ and outputs/.
