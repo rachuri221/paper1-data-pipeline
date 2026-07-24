@@ -1,7 +1,7 @@
 # Paper 1 — Variable Dictionary
 
-Owner: Rohan (Data Analyst 2), Assignment 2 Task 2. This documents **every variable in the cleaned
-Paper 1 datasets** that Lydia will use to build the regression models. Ranges below are the **actual
+Owner: Secondary Data Analyst. This documents **every variable in the cleaned
+Paper 1 datasets** that Statistician will use to build the regression models. Ranges below are the **actual
 post-cleaning values** read from `data/cleaned/<dataset>/<dataset>_clean.csv` (pipeline:
 `analysis/paper1_cleaning.py`; naming: `docs/variable_naming_convention.md`; composite construction:
 `docs/analysis_decisions.md`).
@@ -32,7 +32,7 @@ Fields per variable: **name · description · type · range after cleaning · so
 - **spending_behavior_index:** CFPB = PROPPLAN + MANAGE1 + SELFCONTROL; SCF = SPENDLESS + reverse-SPENDMOR + BFINPLAN;
   NFCS = covers-expenses(J4) + spending-vs-income(J32).
 
-> ⚠️ **Comparability caveat (read before pooling):** the same-named composite is built from *different items* in
+> **Comparability caveat (read before pooling):** the same-named composite is built from *different items* in
 > each dataset, so scores are **not directly comparable across datasets** (e.g., NFCS knowledge means ≈36–41 vs
 > CFPB/SCF ≈63–65 is largely instrument difference). Standardize *within* dataset before any cross-dataset comparison.
 > Confidence by dataset is documented in `analysis_decisions.md` (e.g., SCF credit and NFCS/SCF spending are LOW–MEDIUM).
@@ -89,7 +89,7 @@ See `underserved_method` for the per-row label. NLSY97/CFPB missings are **held,
 
 ---
 
-## E. Outcome coverage & modeling notes (for Lydia)
+## E. Outcome coverage & modeling notes (for )
 
 **Which datasets carry which outcome** (a model can only include a dataset for an outcome it measures):
 
