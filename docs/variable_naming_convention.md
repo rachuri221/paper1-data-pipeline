@@ -4,7 +4,7 @@ All cleaned Paper 1 datasets use the **same snake_case canonical names** so vari
 same thing across CFPB, SCF, and NFCS. Cleaned files live in `data/cleaned/<dataset>/<dataset>_clean.csv`.
 Each cleaned file is a tidy table of these canonical variables. The component items behind each
 composite and their exact formulas are documented in `docs/analysis_decisions.md` and
-`analysis/paper1_cleaning.py`, so Rohan can recompute any composite from the raw files for his
+`analysis/paper1_cleaning.py`, so Secondary Data Analyst can recompute any composite from the raw files for his
 spot-check validation. Binary variables are coded **0/1** everywhere
 (item 19); ages are integers (item 18); income is 2020 USD (item 17).
 
@@ -46,7 +46,7 @@ savings/money-market account ownership (YAST-4400, ~79% coverage). `financial_kn
 years). `underserved_200fpl` is clean (from `pov_ratio` ≤ 200%). ASVAB is a numeracy control, not literacy.
 See `cleaning_log.md`.
 
-**Roles for analysis** (for Rohan's variable dictionary / Lydia's models): the four composite
+**Roles for analysis** (for Secondary Data Analyst's variable dictionary / Statistician's models): the four composite
 indices are the **dependent (outcome)** variables; `underserved_200fpl` is the primary
 **independent** variable; `age`/`female`/`education_level`/`census_region`/`household_income_2020_usd`
 are **controls**.
